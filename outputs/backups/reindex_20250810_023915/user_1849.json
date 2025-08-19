@@ -1,0 +1,54 @@
+{
+  "user_id": 1849,
+  "churn_probability": 99.77,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 2.0,
+      "shap_value": 3.09114146232605,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 2.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 171.66,
+      "shap_value": 0.5606400966644287,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (171 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 26.0,
+      "shap_value": 0.30826008319854736,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (26 days) - significantly increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 56.97,
+      "shap_value": -0.26628783345222473,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (56 sessions) - moderately reduces churn risk."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.2613728642463684,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - moderately increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1849.png",
+  "model_b_used": false
+}

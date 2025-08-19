@@ -1,0 +1,54 @@
+{
+  "user_id": 1936,
+  "churn_probability": 22.61,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Week 3 Engagement",
+      "value": 160.15,
+      "shap_value": -0.5649126768112183,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (160 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 37.0,
+      "shap_value": -0.43446794152259827,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 37.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 29.0,
+      "shap_value": 0.3862057328224182,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (29 days) - significantly increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 22.97,
+      "shap_value": -0.3643432557582855,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (22 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 152.51,
+      "shap_value": -0.3449400067329407,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (152 sessions) - significantly reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1936.png",
+  "model_b_used": false
+}

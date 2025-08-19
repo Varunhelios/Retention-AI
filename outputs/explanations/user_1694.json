@@ -1,0 +1,54 @@
+{
+  "user_id": 1694,
+  "churn_probability": 98.61,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.6036297082901001,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Day 86",
+      "value": 300.0,
+      "shap_value": 0.4662303626537323,
+      "model": "Model A",
+      "description": "Day 86",
+      "explanation": "\ud83d\udcca Day 86: 300.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 275.27,
+      "shap_value": 0.44771674275398254,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (275 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 5 Engagement",
+      "value": 291.81,
+      "shap_value": 0.4237680733203888,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (291 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.3224148154258728,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1694.png",
+  "model_b_used": false
+}

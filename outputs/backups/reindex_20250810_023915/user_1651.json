@@ -1,0 +1,54 @@
+{
+  "user_id": 1651,
+  "churn_probability": 99.81,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "App Rating Given",
+      "value": 10.0,
+      "shap_value": 0.7065748572349548,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (10.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 48.0,
+      "shap_value": 0.486167848110199,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (48 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 43.0,
+      "shap_value": 0.4495551586151123,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 43.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.34281060099601746,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 122.39,
+      "shap_value": 0.3269211947917938,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (122 sessions) - significantly increases churn risk."
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1651.png",
+  "model_b_used": false
+}

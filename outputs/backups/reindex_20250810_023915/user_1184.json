@@ -1,0 +1,54 @@
+{
+  "user_id": 1184,
+  "churn_probability": 99.63,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 4.0,
+      "shap_value": 3.1909549236297607,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 4.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "New Password Request",
+      "value": 8.0,
+      "shap_value": 0.48022720217704773,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.34196993708610535,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 83.0,
+      "shap_value": 0.27103549242019653,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (83 days) - moderately increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 218.21,
+      "shap_value": -0.2655007839202881,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (218 sessions) - moderately reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We've missed you! Check out what's new since your last visit.",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1184.png",
+  "model_b_used": false
+}

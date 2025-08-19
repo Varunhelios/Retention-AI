@@ -1,0 +1,54 @@
+{
+  "user_id": 1083,
+  "churn_probability": 8.68,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "User Tenure",
+      "value": 20.0,
+      "shap_value": -0.7030685544013977,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (20 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 22.55,
+      "shap_value": -0.5085669159889221,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (22 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 19.84,
+      "shap_value": -0.5021623969078064,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (19 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 39.0,
+      "shap_value": -0.4573040008544922,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 39.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 60.69,
+      "shap_value": -0.4112618565559387,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (60 sessions) - significantly reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app.",
+    "Join our community to connect with other users and share experiences."
+  ],
+  "chart_path": "outputs/charts/user_1083.png",
+  "model_b_used": false
+}

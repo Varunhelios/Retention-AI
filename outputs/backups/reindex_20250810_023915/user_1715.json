@@ -1,0 +1,54 @@
+{
+  "user_id": 1715,
+  "churn_probability": 99.92,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 3.0,
+      "shap_value": 3.000187397003174,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 3.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "New Password Request",
+      "value": 8.0,
+      "shap_value": 0.45231378078460693,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 108.05,
+      "shap_value": 0.29643455147743225,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (108 sessions) - moderately increases churn risk."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 24.0,
+      "shap_value": 0.2589779496192932,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (24 days) - moderately increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 0.2565620541572571,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - moderately increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "We've missed you! Check out what's new since your last visit."
+  ],
+  "chart_path": "outputs/charts/user_1715.png",
+  "model_b_used": false
+}

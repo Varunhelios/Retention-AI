@@ -1,0 +1,54 @@
+{
+  "user_id": 1312,
+  "churn_probability": 98.71,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "User Tenure",
+      "value": 29.0,
+      "shap_value": 0.5312094688415527,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (29 days) - significantly increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "App Rating Given",
+      "value": 10.0,
+      "shap_value": 0.5044554471969604,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (10.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 300.0,
+      "shap_value": 0.38991236686706543,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (300 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 22.0,
+      "shap_value": -0.3824353814125061,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 22.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.3165876269340515,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1312.png",
+  "model_b_used": false
+}

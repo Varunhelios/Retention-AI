@@ -1,0 +1,54 @@
+{
+  "user_id": 1087,
+  "churn_probability": 98.71,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 1.0,
+      "shap_value": 3.212174415588379,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 1.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 88",
+      "value": 54.82,
+      "shap_value": -0.5087048411369324,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 54.82 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 62",
+      "value": 91.78,
+      "shap_value": -0.3999423682689667,
+      "model": "Model A",
+      "description": "Day 62",
+      "explanation": "\ud83d\udcca Day 62: 91.78 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 35",
+      "value": 17.01,
+      "shap_value": -0.38186201453208923,
+      "model": "Model A",
+      "description": "Day 35",
+      "explanation": "\ud83d\udcca Day 35: 17.01 - significantly reduces churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 28.0,
+      "shap_value": 0.3477500081062317,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (28 days) - significantly increases churn risk. Still in critical onboarding period."
+    }
+  ],
+  "recommendations": [
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "We've missed you! Check out what's new since your last visit.",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1087.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1043,
+  "churn_probability": 99.18,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "App Rating Given",
+      "value": 10.0,
+      "shap_value": 0.8771259784698486,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (10.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0,
+      "shap_value": 0.3460473120212555,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 123.62,
+      "shap_value": 0.31688809394836426,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (123 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Day 37",
+      "value": 0.0,
+      "shap_value": 0.26020053029060364,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 0.0 - moderately increases churn risk"
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.25783833861351013,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - moderately increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1043.png",
+  "model_b_used": false
+}

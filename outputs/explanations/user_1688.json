@@ -1,0 +1,54 @@
+{
+  "user_id": 1688,
+  "churn_probability": 97.75,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 45.0,
+      "shap_value": 0.7194476127624512,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 45.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "App Rating Given",
+      "value": 10.0,
+      "shap_value": 0.439977765083313,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (10.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.37919408082962036,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Day 63",
+      "value": 67.62,
+      "shap_value": -0.35649338364601135,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 67.62 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 62",
+      "value": 0.0,
+      "shap_value": 0.23412737250328064,
+      "model": "Model A",
+      "description": "Day 62",
+      "explanation": "\ud83d\udcca Day 62: 0.0 - moderately increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Love having you! Consider sharing your experience in a review."
+  ],
+  "chart_path": "outputs/charts/user_1688.png",
+  "model_b_used": false
+}

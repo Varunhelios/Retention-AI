@@ -1,0 +1,54 @@
+{
+  "user_id": 1850,
+  "churn_probability": 97.26,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 3.0,
+      "shap_value": 3.4621453285217285,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 3.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 300.0,
+      "shap_value": 0.9198299646377563,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 300.0,
+      "shap_value": 0.4676734209060669,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (300 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "New Password Request",
+      "value": 10.0,
+      "shap_value": 0.3154025375843048,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (10) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 44.0,
+      "shap_value": 0.25750216841697693,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (44 days) - moderately increases churn risk. Long-term relationship built."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "We've missed you! Check out what's new since your last visit."
+  ],
+  "chart_path": "outputs/charts/user_1850.png",
+  "model_b_used": false
+}

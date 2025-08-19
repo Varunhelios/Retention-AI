@@ -1,0 +1,54 @@
+{
+  "user_id": 1292,
+  "churn_probability": 99.82,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 0.0,
+      "shap_value": 2.98543119430542,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 300.0,
+      "shap_value": 0.4851498603820801,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (300 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 34.0,
+      "shap_value": 0.45358210802078247,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (34 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 300.0,
+      "shap_value": 0.4332573413848877,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "New Password Request",
+      "value": 13.0,
+      "shap_value": 0.32107239961624146,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (13) - significantly increases churn risk. Significant login friction."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "We've missed you! Check out what's new since your last visit."
+  ],
+  "chart_path": "outputs/charts/user_1292.png",
+  "model_b_used": false
+}

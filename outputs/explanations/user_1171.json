@@ -1,0 +1,54 @@
+{
+  "user_id": 1171,
+  "churn_probability": 98.81,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "New Password Request",
+      "value": 8.0,
+      "shap_value": 0.5990359783172607,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 232.99,
+      "shap_value": -0.49238330125808716,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (232 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 31.0,
+      "shap_value": 0.4681949317455292,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (31 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 258.16,
+      "shap_value": 0.418649822473526,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (258 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 300.0,
+      "shap_value": 0.4077584445476532,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (300 sessions) - significantly increases churn risk."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1171.png",
+  "model_b_used": false
+}

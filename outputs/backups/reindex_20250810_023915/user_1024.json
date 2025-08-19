@@ -1,0 +1,54 @@
+{
+  "user_id": 1024,
+  "churn_probability": 96.38,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Day 74",
+      "value": 67.9,
+      "shap_value": 0.48198768496513367,
+      "model": "Model A",
+      "description": "Day 74",
+      "explanation": "\ud83d\udcca Day 74: 67.9 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 52.0,
+      "shap_value": 0.2616443932056427,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (52 days) - moderately increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Day 88",
+      "value": 0.0,
+      "shap_value": 0.25562673807144165,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 0.0 - moderately increases churn risk"
+    },
+    {
+      "feature": "Day 37",
+      "value": 93.61,
+      "shap_value": -0.24924734234809875,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 93.61 - moderately reduces churn risk"
+    },
+    {
+      "feature": "Drop In Usage",
+      "value": 22.214666666666663,
+      "shap_value": 0.23766355216503143,
+      "model": "Model A",
+      "description": "Drop In Usage",
+      "explanation": "\ud83d\udcca Drop In Usage: 22.214666666666663 - moderately increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1024.png",
+  "model_b_used": false
+}

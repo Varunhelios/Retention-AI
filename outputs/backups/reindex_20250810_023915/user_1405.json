@@ -1,0 +1,54 @@
+{
+  "user_id": 1405,
+  "churn_probability": 91.44,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 36.0,
+      "shap_value": -0.49246907234191895,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 36.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 113.99,
+      "shap_value": 0.3937820494174957,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (113 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0,
+      "shap_value": 0.37039199471473694,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 59.9,
+      "shap_value": -0.2849721312522888,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (59 sessions) - moderately reduces churn risk."
+    },
+    {
+      "feature": "App Rating Given",
+      "value": 8.0,
+      "shap_value": -0.2655875086784363,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (8.0/5 stars) - moderately reduces churn risk. User appreciates the app."
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1405.png",
+  "model_b_used": false
+}

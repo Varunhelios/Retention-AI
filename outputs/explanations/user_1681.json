@@ -1,0 +1,54 @@
+{
+  "user_id": 1681,
+  "churn_probability": 92.83,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.5005741715431213,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.4604211747646332,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 36.0,
+      "shap_value": -0.27982649207115173,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 36.0 - moderately reduces churn risk"
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.2636352479457855,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - moderately increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0093333333333333,
+      "shap_value": 0.26122114062309265,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0093333333333333 - moderately increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Love having you! Consider sharing your experience in a review."
+  ],
+  "chart_path": "outputs/charts/user_1681.png",
+  "model_b_used": false
+}

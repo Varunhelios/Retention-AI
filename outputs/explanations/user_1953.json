@@ -1,0 +1,54 @@
+{
+  "user_id": 1953,
+  "churn_probability": 3.65,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 828.0,
+      "shap_value": -0.5306148529052734,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 828.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 272.44,
+      "shap_value": -0.4737940728664398,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (272 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Day 63",
+      "value": 300.0,
+      "shap_value": -0.44812697172164917,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 300.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 207.23,
+      "shap_value": -0.3856794238090515,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (207 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 140.37,
+      "shap_value": -0.3479347229003906,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (140 sessions) - significantly reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1953.png",
+  "model_b_used": false
+}

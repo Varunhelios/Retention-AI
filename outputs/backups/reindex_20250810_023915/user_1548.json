@@ -1,0 +1,54 @@
+{
+  "user_id": 1548,
+  "churn_probability": 99.71,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 5.0,
+      "shap_value": 3.681260824203491,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 5.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "New Password Request",
+      "value": 15.0,
+      "shap_value": 0.5462856292724609,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (15) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Day 36",
+      "value": 38.85,
+      "shap_value": -0.30985331535339355,
+      "model": "Model A",
+      "description": "Day 36",
+      "explanation": "\ud83d\udcca Day 36: 38.85 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 230.1,
+      "shap_value": 0.2999911904335022,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (230 sessions) - moderately increases churn risk."
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 25.0,
+      "shap_value": 0.2892604470252991,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 25.0 - moderately increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "We've missed you! Check out what's new since your last visit."
+  ],
+  "chart_path": "outputs/charts/user_1548.png",
+  "model_b_used": false
+}

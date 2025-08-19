@@ -1,0 +1,54 @@
+{
+  "user_id": 1889,
+  "churn_probability": 70.66,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Day 88",
+      "value": 300.0,
+      "shap_value": 0.35835909843444824,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 300.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 75",
+      "value": 151.53,
+      "shap_value": 0.3433578908443451,
+      "model": "Model A",
+      "description": "Day 75",
+      "explanation": "\ud83d\udcca Day 75: 151.53 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 74",
+      "value": 144.11,
+      "shap_value": 0.33361437916755676,
+      "model": "Model A",
+      "description": "Day 74",
+      "explanation": "\ud83d\udcca Day 74: 144.11 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 49",
+      "value": 293.21,
+      "shap_value": 0.32067471742630005,
+      "model": "Model A",
+      "description": "Day 49",
+      "explanation": "\ud83d\udcca Day 49: 293.21 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 183.83,
+      "shap_value": -0.3047131299972534,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (183 sessions) - significantly reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1889.png",
+  "model_b_used": false
+}

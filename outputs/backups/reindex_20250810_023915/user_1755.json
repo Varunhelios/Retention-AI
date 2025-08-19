@@ -1,0 +1,54 @@
+{
+  "user_id": 1755,
+  "churn_probability": 8.12,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Day 37",
+      "value": 20.65,
+      "shap_value": -0.9230204820632935,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 20.65 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 39",
+      "value": 23.34,
+      "shap_value": -0.5703211426734924,
+      "model": "Model A",
+      "description": "Day 39",
+      "explanation": "\ud83d\udcca Day 39: 23.34 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 17.0,
+      "shap_value": -0.44181936979293823,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 17.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 106.85,
+      "shap_value": -0.39705097675323486,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (106 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 62.36,
+      "shap_value": -0.3490821421146393,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (62 sessions) - significantly reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1755.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1794,
+  "churn_probability": 96.67,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0,
+      "shap_value": 0.4119662940502167,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 115.32,
+      "shap_value": 0.33402949571609497,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (115 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 25.0,
+      "shap_value": 0.32383543252944946,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (25 days) - significantly increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 71.45,
+      "shap_value": -0.24342748522758484,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (71 sessions) - moderately reduces churn risk."
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 103.19,
+      "shap_value": 0.24185200035572052,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (103 sessions) - moderately increases churn risk."
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1794.png",
+  "model_b_used": false
+}

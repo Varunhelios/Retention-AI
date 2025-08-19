@@ -1,0 +1,54 @@
+{
+  "user_id": 1828,
+  "churn_probability": 69.37,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.5508500337600708,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Day 37",
+      "value": 1.53,
+      "shap_value": -0.5145636796951294,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 1.53 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 5 Engagement",
+      "value": 27.71,
+      "shap_value": -0.4748797118663788,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (27 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.4326147437095642,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.4095889925956726,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1828.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1662,
+  "churn_probability": 88.05,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "New Password Request",
+      "value": 8.0,
+      "shap_value": 0.6362202167510986,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Day 37",
+      "value": 2.96,
+      "shap_value": -0.5383967161178589,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 2.96 - significantly reduces churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 44.0,
+      "shap_value": 0.5337970852851868,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (44 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.47081977128982544,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Day 36",
+      "value": 135.53,
+      "shap_value": -0.3905593752861023,
+      "model": "Model A",
+      "description": "Day 36",
+      "explanation": "\ud83d\udcca Day 36: 135.53 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1662.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1640,
+  "churn_probability": 97.93,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 1 Engagement",
+      "value": 0.0,
+      "shap_value": 1.1050292253494263,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83d\ude34 No activity in week 1 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 48.0,
+      "shap_value": 0.5538331270217896,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 48.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 0.46150416135787964,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Day 51",
+      "value": 0.0,
+      "shap_value": 0.31192538142204285,
+      "model": "Model A",
+      "description": "Day 51",
+      "explanation": "\ud83d\udcca Day 51: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "New Password Request",
+      "value": 8.0,
+      "shap_value": 0.28347739577293396,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (8) - moderately increases churn risk. Significant login friction."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1640.png",
+  "model_b_used": false
+}

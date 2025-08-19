@@ -1,0 +1,54 @@
+{
+  "user_id": 1698,
+  "churn_probability": 88.27,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 2 Engagement",
+      "value": 162.43,
+      "shap_value": 0.6012153625488281,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (162 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 226.93,
+      "shap_value": 0.5532450675964355,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (226 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "New Password Request",
+      "value": 8.0,
+      "shap_value": 0.477116197347641,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Day 63",
+      "value": 57.42,
+      "shap_value": -0.4333532154560089,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 57.42 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 112.09,
+      "shap_value": 0.38253849744796753,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (112 sessions) - significantly increases churn risk."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1698.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1427,
+  "churn_probability": 7.96,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "User Tenure",
+      "value": 13.0,
+      "shap_value": -0.8006163239479065,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (13 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 5 Engagement",
+      "value": 28.74,
+      "shap_value": -0.7001970410346985,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (28 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 59.38,
+      "shap_value": -0.47277963161468506,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (59 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 34.0,
+      "shap_value": -0.3621066212654114,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 34.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 94.82,
+      "shap_value": -0.3049887418746948,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (94 sessions) - significantly reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1427.png",
+  "model_b_used": false
+}

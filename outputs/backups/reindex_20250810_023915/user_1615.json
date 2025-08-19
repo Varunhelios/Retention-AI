@@ -1,0 +1,54 @@
+{
+  "user_id": 1615,
+  "churn_probability": 99.22,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "New Password Request",
+      "value": 8.0,
+      "shap_value": 0.674061119556427,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 28.0,
+      "shap_value": 0.4569571316242218,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (28 days) - significantly increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 300.0,
+      "shap_value": 0.4512515962123871,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 8.0,
+      "shap_value": 0.3469720780849457,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 8.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 33",
+      "value": 300.0,
+      "shap_value": 0.2837625741958618,
+      "model": "Model A",
+      "description": "Day 33",
+      "explanation": "\ud83d\udcca Day 33: 300.0 - moderately increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1615.png",
+  "model_b_used": false
+}

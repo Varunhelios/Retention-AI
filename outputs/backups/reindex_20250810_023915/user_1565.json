@@ -1,0 +1,54 @@
+{
+  "user_id": 1565,
+  "churn_probability": 49.79,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 1.0,
+      "shap_value": 2.98722767829895,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 1.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 215.51,
+      "shap_value": 0.4225615859031677,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (215 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Day 51",
+      "value": 86.66,
+      "shap_value": -0.35626065731048584,
+      "model": "Model A",
+      "description": "Day 51",
+      "explanation": "\ud83d\udcca Day 51: 86.66 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 32",
+      "value": 210.04,
+      "shap_value": 0.3387998044490814,
+      "model": "Model A",
+      "description": "Day 32",
+      "explanation": "\ud83d\udcca Day 32: 210.04 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 42.0,
+      "shap_value": 0.316479355096817,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (42 days) - significantly increases churn risk. Long-term relationship built."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We'd love to hear how we can improve your experience. Share your feedback with us!",
+    "We've missed you! Check out what's new since your last visit."
+  ],
+  "chart_path": "outputs/charts/user_1565.png",
+  "model_b_used": false
+}

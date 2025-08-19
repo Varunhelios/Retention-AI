@@ -1,0 +1,54 @@
+{
+  "user_id": 1334,
+  "churn_probability": 75.47,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Week 2 Engagement",
+      "value": 292.15,
+      "shap_value": 0.7816590070724487,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (292 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.5630778670310974,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Day 37",
+      "value": 15.99,
+      "shap_value": -0.44388729333877563,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 15.99 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.4131568670272827,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 222.0,
+      "shap_value": 0.31262698769569397,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 222.0 - significantly increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1334.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1094,
+  "churn_probability": 65.9,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 1.0,
+      "shap_value": 3.6401429176330566,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 1.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "New Password Request",
+      "value": 15.0,
+      "shap_value": 0.5028845071792603,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (15) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 114.73,
+      "shap_value": 0.2998170554637909,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (114 sessions) - moderately increases churn risk."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0,
+      "shap_value": 0.255028635263443,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - moderately increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 23.0,
+      "shap_value": 0.2156381756067276,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (23 days) - moderately increases churn risk. Still in critical onboarding period."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We'd love to hear how we can improve your experience. Share your feedback with us!",
+    "We've missed you! Check out what's new since your last visit."
+  ],
+  "chart_path": "outputs/charts/user_1094.png",
+  "model_b_used": false
+}

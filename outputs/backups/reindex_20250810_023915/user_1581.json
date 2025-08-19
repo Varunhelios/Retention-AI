@@ -1,0 +1,54 @@
+{
+  "user_id": 1581,
+  "churn_probability": 31.48,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Week 5 Engagement",
+      "value": 6.4,
+      "shap_value": -0.871200442314148,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (6 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 16.0,
+      "shap_value": -0.8551433086395264,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (16 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 88.6,
+      "shap_value": -0.5103788375854492,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (88 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "New Password Request",
+      "value": 8.0,
+      "shap_value": 0.40232494473457336,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 29.0,
+      "shap_value": -0.36393463611602783,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 29.0 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1581.png",
+  "model_b_used": false
+}

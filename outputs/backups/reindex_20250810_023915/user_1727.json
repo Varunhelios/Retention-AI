@@ -1,0 +1,54 @@
+{
+  "user_id": 1727,
+  "churn_probability": 58.27,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Week 5 Engagement",
+      "value": 240.31,
+      "shap_value": 0.5990250706672668,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (240 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 153.88,
+      "shap_value": -0.452422171831131,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (153 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 283.0,
+      "shap_value": 0.4209272861480713,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (283 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Day 32",
+      "value": 78.22,
+      "shap_value": 0.30133864283561707,
+      "model": "Model A",
+      "description": "Day 32",
+      "explanation": "\ud83d\udcca Day 32: 78.22 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.29519563913345337,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - moderately increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Love having you! Consider sharing your experience in a review."
+  ],
+  "chart_path": "outputs/charts/user_1727.png",
+  "model_b_used": false
+}

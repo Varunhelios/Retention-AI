@@ -1,0 +1,54 @@
+{
+  "user_id": 1962,
+  "churn_probability": 71.81,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "User Tenure",
+      "value": 17.0,
+      "shap_value": -0.6497623920440674,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (17 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Day 35",
+      "value": 86.3,
+      "shap_value": -0.5247542858123779,
+      "model": "Model A",
+      "description": "Day 35",
+      "explanation": "\ud83d\udcca Day 35: 86.3 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.49321967363357544,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 27.94,
+      "shap_value": -0.4487987458705902,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (27 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 0.37727460265159607,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1962.png",
+  "model_b_used": false
+}

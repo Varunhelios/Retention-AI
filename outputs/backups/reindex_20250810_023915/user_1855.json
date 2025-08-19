@@ -1,0 +1,54 @@
+{
+  "user_id": 1855,
+  "churn_probability": 95.1,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 1.1402376890182495,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Std Dev Daily Usage",
+      "value": 29.82682897416657,
+      "shap_value": 0.591808021068573,
+      "model": "Model A",
+      "description": "Std Dev Daily Usage",
+      "explanation": "\ud83d\udcca Std Dev Daily Usage: 29.82682897416657 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 17.0,
+      "shap_value": -0.3992404341697693,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (17 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 8.52,
+      "shap_value": -0.38792920112609863,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (8 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 30.83,
+      "shap_value": -0.3673873543739319,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (30 sessions) - significantly reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1855.png",
+  "model_b_used": false
+}

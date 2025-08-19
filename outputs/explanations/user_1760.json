@@ -1,0 +1,54 @@
+{
+  "user_id": 1760,
+  "churn_probability": 98.42,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 42.0,
+      "shap_value": 1.0638229846954346,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 42.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 28.0,
+      "shap_value": 0.9080262780189514,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (28 days) - significantly increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 106.16,
+      "shap_value": 0.38244274258613586,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (106 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0,
+      "shap_value": 0.2872297465801239,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - moderately increases churn risk"
+    },
+    {
+      "feature": "Day 62",
+      "value": 0.0,
+      "shap_value": 0.27978867292404175,
+      "model": "Model A",
+      "description": "Day 62",
+      "explanation": "\ud83d\udcca Day 62: 0.0 - moderately increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1760.png",
+  "model_b_used": false
+}

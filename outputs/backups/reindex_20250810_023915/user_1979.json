@@ -1,0 +1,54 @@
+{
+  "user_id": 1979,
+  "churn_probability": 96.27,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 1.0,
+      "shap_value": 3.7463550567626953,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 1.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "New Password Request",
+      "value": 13.0,
+      "shap_value": 0.596160352230072,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (13) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0,
+      "shap_value": 0.2329121083021164,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - moderately increases churn risk"
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 109.54,
+      "shap_value": -0.2229306846857071,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (109 sessions) - moderately reduces churn risk."
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 112.83,
+      "shap_value": 0.20892693102359772,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (112 sessions) - moderately increases churn risk."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "We've missed you! Check out what's new since your last visit."
+  ],
+  "chart_path": "outputs/charts/user_1979.png",
+  "model_b_used": false
+}

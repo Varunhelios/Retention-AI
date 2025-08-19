@@ -1,0 +1,54 @@
+{
+  "user_id": 1623,
+  "churn_probability": 96.89,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Day 88",
+      "value": 97.36,
+      "shap_value": -0.778151273727417,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 97.36 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 74",
+      "value": 102.86,
+      "shap_value": 0.43807679414749146,
+      "model": "Model A",
+      "description": "Day 74",
+      "explanation": "\ud83d\udcca Day 74: 102.86 - significantly increases churn risk"
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 37.0,
+      "shap_value": -0.4018658399581909,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 37.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 57.0,
+      "shap_value": 0.40057873725891113,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (57 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Day 63",
+      "value": 0.0,
+      "shap_value": 0.36715462803840637,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 0.0 - significantly increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1623.png",
+  "model_b_used": false
+}

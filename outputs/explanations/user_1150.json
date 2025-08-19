@@ -1,0 +1,54 @@
+{
+  "user_id": 1150,
+  "churn_probability": 86.48,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 5 Engagement",
+      "value": 271.55,
+      "shap_value": 0.6128935217857361,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (271 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Day 86",
+      "value": 300.0,
+      "shap_value": 0.34686991572380066,
+      "model": "Model A",
+      "description": "Day 86",
+      "explanation": "\ud83d\udcca Day 86: 300.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 75",
+      "value": 300.0,
+      "shap_value": 0.2986733317375183,
+      "model": "Model A",
+      "description": "Day 75",
+      "explanation": "\ud83d\udcca Day 75: 300.0 - moderately increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 79.0,
+      "shap_value": 0.28404998779296875,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (79 days) - moderately increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 0.2770766317844391,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - moderately increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Love having you! Consider sharing your experience in a review."
+  ],
+  "chart_path": "outputs/charts/user_1150.png",
+  "model_b_used": false
+}

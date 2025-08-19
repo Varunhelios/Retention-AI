@@ -1,0 +1,54 @@
+{
+  "user_id": 1684,
+  "churn_probability": 67.98,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 0.4260118007659912,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 300.0,
+      "shap_value": 0.39011427760124207,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 5 Engagement",
+      "value": 300.0,
+      "shap_value": 0.28361427783966064,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (300 sessions) - moderately increases churn risk."
+    },
+    {
+      "feature": "Day 88",
+      "value": 0.0,
+      "shap_value": 0.2797282934188843,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 0.0 - moderately increases churn risk"
+    },
+    {
+      "feature": "App Rating Given",
+      "value": 9.0,
+      "shap_value": 0.2670968174934387,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (9.0/5 stars) - moderately increases churn risk. User appreciates the app."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1684.png",
+  "model_b_used": false
+}

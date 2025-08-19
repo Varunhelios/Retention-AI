@@ -1,0 +1,54 @@
+{
+  "user_id": 1935,
+  "churn_probability": 96.87,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 4 Engagement",
+      "value": 4.91,
+      "shap_value": -0.8745225667953491,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (4 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 42.0,
+      "shap_value": 0.7196639180183411,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 42.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 15.0,
+      "shap_value": -0.6749770045280457,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (15 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Std Dev Daily Usage",
+      "value": 30.799866446076187,
+      "shap_value": 0.5763987302780151,
+      "model": "Model A",
+      "description": "Std Dev Daily Usage",
+      "explanation": "\ud83d\udcca Std Dev Daily Usage: 30.799866446076187 - significantly increases churn risk"
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 156.0,
+      "shap_value": 0.3411477506160736,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 156.0 - significantly increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app.",
+    "Join our community to connect with other users and share experiences."
+  ],
+  "chart_path": "outputs/charts/user_1935.png",
+  "model_b_used": false
+}

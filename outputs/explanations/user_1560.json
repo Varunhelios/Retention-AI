@@ -1,0 +1,54 @@
+{
+  "user_id": 1560,
+  "churn_probability": 52.74,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Day 86",
+      "value": 300.0,
+      "shap_value": 0.599157989025116,
+      "model": "Model A",
+      "description": "Day 86",
+      "explanation": "\ud83d\udcca Day 86: 300.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 5 Engagement",
+      "value": 277.89,
+      "shap_value": 0.5576201677322388,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (277 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 235.03,
+      "shap_value": 0.45895588397979736,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (235 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 0.32026052474975586,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 81.0,
+      "shap_value": 0.26425862312316895,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (81 days) - moderately increases churn risk. Long-term relationship built."
+    }
+  ],
+  "recommendations": [
+    "We'd love to hear how we can improve your experience. Share your feedback with us!",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1560.png",
+  "model_b_used": false
+}

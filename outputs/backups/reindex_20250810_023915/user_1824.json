@@ -1,0 +1,54 @@
+{
+  "user_id": 1824,
+  "churn_probability": 99.65,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 1.0,
+      "shap_value": 3.136234760284424,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 1.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 200.61,
+      "shap_value": 0.5682787299156189,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (200 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.3720714747905731,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.3003546893596649,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Day 48",
+      "value": 65.6,
+      "shap_value": -0.2472594827413559,
+      "model": "Model A",
+      "description": "Day 48",
+      "explanation": "\ud83d\udcca Day 48: 65.6 - moderately reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "We've missed you! Check out what's new since your last visit.",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1824.png",
+  "model_b_used": false
+}

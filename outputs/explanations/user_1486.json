@@ -1,0 +1,54 @@
+{
+  "user_id": 1486,
+  "churn_probability": 70.48,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 0.8426041007041931,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 18.0,
+      "shap_value": -0.4105343222618103,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (18 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 0.31945040822029114,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 22.95,
+      "shap_value": -0.31100863218307495,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (22 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 5 Engagement",
+      "value": 0.0,
+      "shap_value": 0.28255099058151245,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83d\ude34 No activity in week 5 engagement - moderately increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1486.png",
+  "model_b_used": false
+}

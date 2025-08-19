@@ -1,0 +1,54 @@
+{
+  "user_id": 1251,
+  "churn_probability": 3.61,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Week 3 Engagement",
+      "value": 300.0,
+      "shap_value": -0.5205028653144836,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Day 63",
+      "value": 71.08,
+      "shap_value": -0.4564858078956604,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 71.08 - significantly reduces churn risk"
+    },
+    {
+      "feature": "New Password Request",
+      "value": 8.0,
+      "shap_value": 0.4328271746635437,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "Day 85",
+      "value": 162.65,
+      "shap_value": -0.414450079202652,
+      "model": "Model A",
+      "description": "Day 85",
+      "explanation": "\ud83d\udcca Day 85: 162.65 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 88",
+      "value": 300.0,
+      "shap_value": -0.36544370651245117,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 300.0 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1251.png",
+  "model_b_used": false
+}

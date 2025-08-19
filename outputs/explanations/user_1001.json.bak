@@ -1,0 +1,44 @@
+{
+  "user_id": 1001,
+  "churn_probability": 98.18,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Day_9",
+      "value": 0.0,
+      "shap_value": 1.0551092624664307,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_29",
+      "value": 279.93,
+      "shap_value": 0.5357230305671692,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day 3 Activity",
+      "value": 284.82,
+      "shap_value": 0.44257497787475586,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_22",
+      "value": 0.0,
+      "shap_value": 0.427016019821167,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_5",
+      "value": 0.0,
+      "shap_value": -0.2483980357646942,
+      "model": "Model A"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs\\charts\\user_1001.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1793,
+  "churn_probability": 6.06,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Day 37",
+      "value": 58.97,
+      "shap_value": -0.6951962113380432,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 58.97 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 85",
+      "value": 5.92,
+      "shap_value": -0.6490730047225952,
+      "model": "Model A",
+      "description": "Day 85",
+      "explanation": "\ud83d\udcca Day 85: 5.92 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 63",
+      "value": 33.17,
+      "shap_value": -0.6226303577423096,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 33.17 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 62",
+      "value": 26.97,
+      "shap_value": -0.531426191329956,
+      "model": "Model A",
+      "description": "Day 62",
+      "explanation": "\ud83d\udcca Day 62: 26.97 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 35",
+      "value": 69.53,
+      "shap_value": -0.38832420110702515,
+      "model": "Model A",
+      "description": "Day 35",
+      "explanation": "\ud83d\udcca Day 35: 69.53 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1793.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1473,
+  "churn_probability": 99.35,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.5955147743225098,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 275.0,
+      "shap_value": 0.5858573913574219,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 275.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Std Dev Daily Usage",
+      "value": 30.07565937189378,
+      "shap_value": 0.48895081877708435,
+      "model": "Model A",
+      "description": "Std Dev Daily Usage",
+      "explanation": "\ud83d\udcca Std Dev Daily Usage: 30.07565937189378 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 11.0,
+      "shap_value": -0.4331033527851105,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (11 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.3321649730205536,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1473.png",
+  "model_b_used": false
+}

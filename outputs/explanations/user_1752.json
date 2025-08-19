@@ -1,0 +1,54 @@
+{
+  "user_id": 1752,
+  "churn_probability": 97.77,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "User Tenure",
+      "value": 33.0,
+      "shap_value": 0.6981882452964783,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (33 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 21.0,
+      "shap_value": -0.42877742648124695,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 21.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 88",
+      "value": 0.0,
+      "shap_value": 0.40475741028785706,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 106.39,
+      "shap_value": 0.3819764256477356,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (106 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 946.0,
+      "shap_value": 0.3286688029766083,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 946.0 - significantly increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1752.png",
+  "model_b_used": false
+}

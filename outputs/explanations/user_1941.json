@@ -1,0 +1,54 @@
+{
+  "user_id": 1941,
+  "churn_probability": 3.23,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Day 88",
+      "value": 0.0,
+      "shap_value": 0.4663480520248413,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 43.0,
+      "shap_value": 0.39445802569389343,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (43 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 20.0,
+      "shap_value": -0.37151116132736206,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 20.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 131.32,
+      "shap_value": -0.35967695713043213,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (131 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 7.856999999999999,
+      "shap_value": -0.34226304292678833,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 7.856999999999999 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1941.png",
+  "model_b_used": false
+}

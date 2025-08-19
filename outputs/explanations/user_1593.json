@@ -1,0 +1,54 @@
+{
+  "user_id": 1593,
+  "churn_probability": 89.59,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "User Tenure",
+      "value": 16.0,
+      "shap_value": -0.8385889530181885,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (16 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 113.93,
+      "shap_value": 0.7549357414245605,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (113 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "App Rating Given",
+      "value": 10.0,
+      "shap_value": 0.737244188785553,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (10.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 46.0,
+      "shap_value": 0.6054651737213135,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 46.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 132.35,
+      "shap_value": 0.4205073118209839,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (132 sessions) - significantly increases churn risk."
+    }
+  ],
+  "recommendations": [
+    "We'd love to hear how we can improve your experience. Share your feedback with us!",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1593.png",
+  "model_b_used": false
+}

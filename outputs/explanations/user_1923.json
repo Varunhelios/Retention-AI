@@ -1,0 +1,54 @@
+{
+  "user_id": 1923,
+  "churn_probability": 34.98,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Week 1 Engagement",
+      "value": 0.0,
+      "shap_value": 0.9422973394393921,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83d\ude34 No activity in week 1 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 300.0,
+      "shap_value": 0.5408579707145691,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (300 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 5 Engagement",
+      "value": 300.0,
+      "shap_value": 0.46345028281211853,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (300 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Day 88",
+      "value": 0.0,
+      "shap_value": 0.33239132165908813,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 62",
+      "value": 300.0,
+      "shap_value": -0.32624414563179016,
+      "model": "Model A",
+      "description": "Day 62",
+      "explanation": "\ud83d\udcca Day 62: 300.0 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1923.png",
+  "model_b_used": false
+}

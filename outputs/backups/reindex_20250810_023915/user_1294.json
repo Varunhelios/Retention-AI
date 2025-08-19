@@ -1,0 +1,54 @@
+{
+  "user_id": 1294,
+  "churn_probability": 22.02,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "User Tenure",
+      "value": 15.0,
+      "shap_value": -0.943167507648468,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (15 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Day 37",
+      "value": 0.76,
+      "shap_value": -0.5067673921585083,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 0.76 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 43.07,
+      "shap_value": -0.47268471121788025,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (43 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 195.98,
+      "shap_value": -0.4330662786960602,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (195 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 63.0,
+      "shap_value": -0.37154993414878845,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 63.0 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1294.png",
+  "model_b_used": false
+}

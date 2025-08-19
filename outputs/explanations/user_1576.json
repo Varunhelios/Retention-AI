@@ -1,0 +1,54 @@
+{
+  "user_id": 1576,
+  "churn_probability": 60.23,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Std Dev Daily Usage",
+      "value": 22.51077663989708,
+      "shap_value": 0.6008774042129517,
+      "model": "Model A",
+      "description": "Std Dev Daily Usage",
+      "explanation": "\ud83d\udcca Std Dev Daily Usage: 22.51077663989708 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 11.0,
+      "shap_value": -0.5147249698638916,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (11 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Week 5 Engagement",
+      "value": 31.72,
+      "shap_value": -0.46848374605178833,
+      "model": "Model A",
+      "description": "Activity level during their fifth week",
+      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (31 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 0.0,
+      "shap_value": 0.4111022353172302,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 0.0,
+      "shap_value": 0.29114246368408203,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83d\ude34 No activity in week 1 engagement - moderately increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "We'd love to hear how we can improve your experience. Share your feedback with us!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1576.png",
+  "model_b_used": false
+}

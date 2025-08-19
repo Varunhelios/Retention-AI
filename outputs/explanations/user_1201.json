@@ -1,0 +1,54 @@
+{
+  "user_id": 1201,
+  "churn_probability": 98.48,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 3 Engagement",
+      "value": 259.4,
+      "shap_value": 1.2225708961486816,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (259 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Day 86",
+      "value": 300.0,
+      "shap_value": 0.46236029267311096,
+      "model": "Model A",
+      "description": "Day 86",
+      "explanation": "\ud83d\udcca Day 86: 300.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 990.0,
+      "shap_value": 0.39723601937294006,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 990.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 171.88,
+      "shap_value": 0.3717889189720154,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (171 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Day 75",
+      "value": 300.0,
+      "shap_value": 0.32496732473373413,
+      "model": "Model A",
+      "description": "Day 75",
+      "explanation": "\ud83d\udcca Day 75: 300.0 - significantly increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1201.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1037,
+  "churn_probability": 64.13,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 3.0,
+      "shap_value": 4.182916641235352,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 3.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 88",
+      "value": 194.41,
+      "shap_value": -0.39250338077545166,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 194.41 - significantly reduces churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 84.0,
+      "shap_value": 0.25708484649658203,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (84 days) - moderately increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Day 37",
+      "value": 10.62,
+      "shap_value": -0.24208883941173553,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 10.62 - moderately reduces churn risk"
+    },
+    {
+      "feature": "Day 85",
+      "value": 185.6,
+      "shap_value": -0.21923835575580597,
+      "model": "Model A",
+      "description": "Day 85",
+      "explanation": "\ud83d\udcca Day 85: 185.6 - moderately reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "We'd love to hear how we can improve your experience. Share your feedback with us!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "Explore our app's key features to enhance your daily productivity and experience."
+  ],
+  "chart_path": "outputs/charts/user_1037.png",
+  "model_b_used": false
+}

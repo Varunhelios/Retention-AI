@@ -1,0 +1,54 @@
+{
+  "user_id": 1349,
+  "churn_probability": 78.8,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 6.0,
+      "shap_value": 1.8893710374832153,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 6.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 50.0,
+      "shap_value": 0.48358064889907837,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (50 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Day 88",
+      "value": 0.0,
+      "shap_value": 0.33089479804039,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 74",
+      "value": 121.04,
+      "shap_value": 0.3300941586494446,
+      "model": "Model A",
+      "description": "Day 74",
+      "explanation": "\ud83d\udcca Day 74: 121.04 - significantly increases churn risk"
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 33.388,
+      "shap_value": -0.3053709864616394,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 33.388 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Love having you! Consider sharing your experience in a review."
+  ],
+  "chart_path": "outputs/charts/user_1349.png",
+  "model_b_used": false
+}

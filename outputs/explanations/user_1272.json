@@ -1,0 +1,54 @@
+{
+  "user_id": 1272,
+  "churn_probability": 71.06,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "App Rating Given",
+      "value": 9.0,
+      "shap_value": 0.6055629253387451,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (9.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 24.0,
+      "shap_value": 0.43264827132225037,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (24 days) - significantly increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0,
+      "shap_value": 0.3086872398853302,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 106.58,
+      "shap_value": 0.23689402639865875,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (106 sessions) - moderately increases churn risk."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 161.39,
+      "shap_value": 0.2258467674255371,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (161 sessions) - moderately increases churn risk."
+    }
+  ],
+  "recommendations": [
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1272.png",
+  "model_b_used": false
+}

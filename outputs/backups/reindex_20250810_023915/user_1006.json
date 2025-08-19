@@ -1,0 +1,54 @@
+{
+  "user_id": 1006,
+  "churn_probability": 98.16,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "User Tenure",
+      "value": 36.0,
+      "shap_value": 1.032277226448059,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (36 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "App Rating Given",
+      "value": 9.0,
+      "shap_value": 0.5969106554985046,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (9.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0,
+      "shap_value": 0.4730873703956604,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 28.0,
+      "shap_value": -0.38301265239715576,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 28.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 31",
+      "value": 14.4,
+      "shap_value": -0.3804558217525482,
+      "model": "Model A",
+      "description": "Day 31",
+      "explanation": "\ud83d\udcca Day 31: 14.4 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1006.png",
+  "model_b_used": false
+}

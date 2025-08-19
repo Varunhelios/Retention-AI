@@ -1,0 +1,54 @@
+{
+  "user_id": 1370,
+  "churn_probability": 95.27,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.5886539816856384,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.5350024104118347,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Day 74",
+      "value": 67.26,
+      "shap_value": 0.5193858742713928,
+      "model": "Model A",
+      "description": "Day 74",
+      "explanation": "\ud83d\udcca Day 74: 67.26 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 54.0,
+      "shap_value": 0.4332965910434723,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (54 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Day 88",
+      "value": 56.49,
+      "shap_value": -0.35700827836990356,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 56.49 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We'd love to hear how we can improve your experience. Share your feedback with us!",
+    "As a valued customer, check out our premium features for an enhanced experience."
+  ],
+  "chart_path": "outputs/charts/user_1370.png",
+  "model_b_used": false
+}

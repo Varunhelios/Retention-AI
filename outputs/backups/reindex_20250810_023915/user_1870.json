@@ -1,0 +1,54 @@
+{
+  "user_id": 1870,
+  "churn_probability": 99.92,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 0.0,
+      "shap_value": 3.0913374423980713,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "New Password Request",
+      "value": 15.0,
+      "shap_value": 0.6950583457946777,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (15) - significantly increases churn risk. Significant login friction."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 29.0,
+      "shap_value": 0.684437096118927,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (29 days) - significantly increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Day 32",
+      "value": 57.21,
+      "shap_value": 0.36871716380119324,
+      "model": "Model A",
+      "description": "Day 32",
+      "explanation": "\ud83d\udcca Day 32: 57.21 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 37",
+      "value": 36.49,
+      "shap_value": -0.3582375943660736,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 36.49 - significantly reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "We've missed you! Check out what's new since your last visit."
+  ],
+  "chart_path": "outputs/charts/user_1870.png",
+  "model_b_used": false
+}

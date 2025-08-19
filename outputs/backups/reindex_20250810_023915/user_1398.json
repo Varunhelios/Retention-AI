@@ -1,0 +1,54 @@
+{
+  "user_id": 1398,
+  "churn_probability": 96.23,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "User Tenure",
+      "value": 28.0,
+      "shap_value": 0.8458133935928345,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (28 days) - significantly increases churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Late Usage Avg",
+      "value": 0.0,
+      "shap_value": 0.36996954679489136,
+      "model": "Model A",
+      "description": "Late Usage Avg",
+      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 68.56,
+      "shap_value": 0.2597163915634155,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (68 sessions) - moderately increases churn risk."
+    },
+    {
+      "feature": "Week 2 Engagement",
+      "value": 75.52,
+      "shap_value": 0.254150927066803,
+      "model": "Model A",
+      "description": "Activity level during their second week",
+      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (75 sessions) - moderately increases churn risk."
+    },
+    {
+      "feature": "Day 37",
+      "value": 0.0,
+      "shap_value": 0.2517349421977997,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 0.0 - moderately increases churn risk"
+    }
+  ],
+  "recommendations": [
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1398.png",
+  "model_b_used": false
+}

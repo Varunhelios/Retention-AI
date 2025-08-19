@@ -1,0 +1,54 @@
+{
+  "user_id": 1480,
+  "churn_probability": 96.16,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Day 63",
+      "value": 64.49,
+      "shap_value": -0.4809531569480896,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 64.49 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 62",
+      "value": 117.18,
+      "shap_value": -0.44548001885414124,
+      "model": "Model A",
+      "description": "Day 62",
+      "explanation": "\ud83d\udcca Day 62: 117.18 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 32",
+      "value": 117.71,
+      "shap_value": 0.42871522903442383,
+      "model": "Model A",
+      "description": "Day 32",
+      "explanation": "\ud83d\udcca Day 32: 117.71 - significantly increases churn risk"
+    },
+    {
+      "feature": "App Rating Given",
+      "value": 9.0,
+      "shap_value": 0.4265698790550232,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (9.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.41667190194129944,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1480.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1541,
+  "churn_probability": 47.84,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Week 4 Engagement",
+      "value": 3.18,
+      "shap_value": -1.0344001054763794,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (3 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 13.53,
+      "shap_value": -0.6246512532234192,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (13 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 37.0,
+      "shap_value": -0.4787660837173462,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 37.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "App Rating Given",
+      "value": 9.0,
+      "shap_value": 0.35136160254478455,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (9.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 40.66,
+      "shap_value": -0.2793111503124237,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (40 sessions) - moderately reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "Love having you! Consider sharing your experience in a review.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1541.png",
+  "model_b_used": false
+}

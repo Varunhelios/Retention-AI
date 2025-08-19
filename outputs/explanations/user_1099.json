@@ -1,0 +1,54 @@
+{
+  "user_id": 1099,
+  "churn_probability": 64.11,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 45.0,
+      "shap_value": 0.8999572396278381,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 45.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 88",
+      "value": 105.69,
+      "shap_value": -0.6888776421546936,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 105.69 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 74",
+      "value": 104.91,
+      "shap_value": 0.44460898637771606,
+      "model": "Model A",
+      "description": "Day 74",
+      "explanation": "\ud83d\udcca Day 74: 104.91 - significantly increases churn risk"
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 940.0,
+      "shap_value": 0.40978753566741943,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 940.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 60.0,
+      "shap_value": 0.39805564284324646,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (60 days) - significantly increases churn risk. Long-term relationship built."
+    }
+  ],
+  "recommendations": [
+    "We'd love to hear how we can improve your experience. Share your feedback with us!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "As a valued customer, check out our premium features for an enhanced experience."
+  ],
+  "chart_path": "outputs/charts/user_1099.png",
+  "model_b_used": false
+}

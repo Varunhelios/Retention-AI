@@ -1,0 +1,54 @@
+{
+  "user_id": 1432,
+  "churn_probability": 2.03,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Day 88",
+      "value": 59.72,
+      "shap_value": -0.879686176776886,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 59.72 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 63",
+      "value": 84.63,
+      "shap_value": -0.6441310048103333,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 84.63 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 85",
+      "value": 38.68,
+      "shap_value": -0.4953286945819855,
+      "model": "Model A",
+      "description": "Day 85",
+      "explanation": "\ud83d\udcca Day 85: 38.68 - significantly reduces churn risk"
+    },
+    {
+      "feature": "App Rating Given",
+      "value": 10.0,
+      "shap_value": 0.4341994822025299,
+      "model": "Model A",
+      "description": "Rating they gave our app",
+      "explanation": "\u2b50 High rating (10.0/5 stars) - significantly increases churn risk. User appreciates the app."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 60.0,
+      "shap_value": 0.38512036204338074,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (60 days) - significantly increases churn risk. Long-term relationship built."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1432.png",
+  "model_b_used": false
+}

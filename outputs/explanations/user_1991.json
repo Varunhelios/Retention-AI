@@ -1,0 +1,54 @@
+{
+  "user_id": 1991,
+  "churn_probability": 83.72,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 46.0,
+      "shap_value": 0.7277986407279968,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 46.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 38.0,
+      "shap_value": 0.6372755169868469,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (38 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Day 63",
+      "value": 0.0,
+      "shap_value": 0.39909467101097107,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 85",
+      "value": 31.67,
+      "shap_value": -0.3691253066062927,
+      "model": "Model A",
+      "description": "Day 85",
+      "explanation": "\ud83d\udcca Day 85: 31.67 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.35222238302230835,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Love having you! Consider sharing your experience in a review.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1991.png",
+  "model_b_used": false
+}

@@ -1,0 +1,54 @@
+{
+  "user_id": 1337,
+  "churn_probability": 92.69,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Std Dev Daily Usage",
+      "value": 29.290142568539903,
+      "shap_value": 0.8613706231117249,
+      "model": "Model A",
+      "description": "Std Dev Daily Usage",
+      "explanation": "\ud83d\udcca Std Dev Daily Usage: 29.290142568539903 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.6418460011482239,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "User Tenure",
+      "value": 14.0,
+      "shap_value": -0.5460360050201416,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83d\udcc8 Growing user (14 days) - significantly reduces churn risk. Still in critical onboarding period."
+    },
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 175.0,
+      "shap_value": 0.5108610391616821,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 175.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 24.48,
+      "shap_value": -0.36579179763793945,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (24 sessions) - significantly reduces churn risk."
+    }
+  ],
+  "recommendations": [
+    "Love having you! Consider sharing your experience in a review.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1337.png",
+  "model_b_used": false
+}

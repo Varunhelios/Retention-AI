@@ -1,0 +1,54 @@
+{
+  "user_id": 1506,
+  "churn_probability": 3.11,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Average Spent On App (Inr)",
+      "value": 829.0,
+      "shap_value": -0.5194529294967651,
+      "model": "Model A",
+      "description": "Average Spent On App (Inr)",
+      "explanation": "\ud83d\udcca Average Spent On App (Inr): 829.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 37",
+      "value": 300.0,
+      "shap_value": -0.39761027693748474,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 300.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 36.44,
+      "shap_value": -0.39135169982910156,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (36 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 33.0,
+      "shap_value": -0.2783062160015106,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 33.0 - moderately reduces churn risk"
+    },
+    {
+      "feature": "Day 63",
+      "value": 300.0,
+      "shap_value": -0.2749110758304596,
+      "model": "Model A",
+      "description": "Day 63",
+      "explanation": "\ud83d\udcca Day 63: 300.0 - moderately reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "As a valued customer, check out our premium features for an enhanced experience.",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1506.png",
+  "model_b_used": false
+}

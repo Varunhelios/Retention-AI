@@ -1,0 +1,54 @@
+{
+  "user_id": 1296,
+  "churn_probability": 3.33,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Day 51",
+      "value": 300.0,
+      "shap_value": -0.8999125957489014,
+      "model": "Model A",
+      "description": "Day 51",
+      "explanation": "\ud83d\udcca Day 51: 300.0 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 88",
+      "value": 135.42,
+      "shap_value": -0.642966091632843,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 135.42 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 249.7,
+      "shap_value": -0.525795042514801,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (249 sessions) - significantly reduces churn risk."
+    },
+    {
+      "feature": "Day 62",
+      "value": 111.87,
+      "shap_value": -0.38837841153144836,
+      "model": "Model A",
+      "description": "Day 62",
+      "explanation": "\ud83d\udcca Day 62: 111.87 - significantly reduces churn risk"
+    },
+    {
+      "feature": "Day 85",
+      "value": 300.0,
+      "shap_value": -0.28975117206573486,
+      "model": "Model A",
+      "description": "Day 85",
+      "explanation": "\ud83d\udcca Day 85: 300.0 - moderately reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "Discover new features in our latest update!",
+    "Check out our tips & tricks section to get the most out of our app."
+  ],
+  "chart_path": "outputs/charts/user_1296.png",
+  "model_b_used": false
+}

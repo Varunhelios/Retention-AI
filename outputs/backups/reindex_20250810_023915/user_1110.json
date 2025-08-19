@@ -1,0 +1,54 @@
+{
+  "user_id": 1110,
+  "churn_probability": 99.89,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Average Screen Time",
+      "value": 0.0,
+      "shap_value": 2.92948579788208,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 0.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 46.0,
+      "shap_value": 0.49623188376426697,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (46 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Day 32",
+      "value": 68.76,
+      "shap_value": 0.44067174196243286,
+      "model": "Model A",
+      "description": "Day 32",
+      "explanation": "\ud83d\udcca Day 32: 68.76 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 74",
+      "value": 100.72,
+      "shap_value": 0.4012930989265442,
+      "model": "Model A",
+      "description": "Day 74",
+      "explanation": "\ud83d\udcca Day 74: 100.72 - significantly increases churn risk"
+    },
+    {
+      "feature": "New Password Request",
+      "value": 15.0,
+      "shap_value": 0.384686678647995,
+      "model": "Model A",
+      "description": "New Password Request",
+      "explanation": "\ud83d\udea8 Multiple password resets (15) - significantly increases churn risk. Significant login friction."
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "We've missed you! Check out what's new since your last visit."
+  ],
+  "chart_path": "outputs/charts/user_1110.png",
+  "model_b_used": false
+}

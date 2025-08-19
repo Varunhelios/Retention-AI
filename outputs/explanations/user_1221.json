@@ -1,0 +1,54 @@
+{
+  "user_id": 1221,
+  "churn_probability": 99.39,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Day 37",
+      "value": 52.04,
+      "shap_value": -0.5798125863075256,
+      "model": "Model A",
+      "description": "Day 37",
+      "explanation": "\ud83d\udcca Day 37: 52.04 - significantly reduces churn risk"
+    },
+    {
+      "feature": "User Tenure",
+      "value": 41.0,
+      "shap_value": 0.5550357699394226,
+      "model": "Model A",
+      "description": "How long the user has been with us",
+      "explanation": "\ud83c\udfc6 Established user (41 days) - significantly increases churn risk. Long-term relationship built."
+    },
+    {
+      "feature": "Week 1 Engagement",
+      "value": 124.51,
+      "shap_value": 0.4803194999694824,
+      "model": "Model A",
+      "description": "Activity level during their first week",
+      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (124 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Week 3 Engagement",
+      "value": 0.0,
+      "shap_value": 0.4035089612007141,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+    },
+    {
+      "feature": "Week 4 Engagement",
+      "value": 0.0,
+      "shap_value": 0.3708600103855133,
+      "model": "Model A",
+      "description": "Activity level during their fourth week",
+      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+    }
+  ],
+  "recommendations": [
+    "We're working hard to improve. Your feedback is valuable to us!",
+    "Explore our app's key features to enhance your daily productivity and experience.",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1221.png",
+  "model_b_used": false
+}

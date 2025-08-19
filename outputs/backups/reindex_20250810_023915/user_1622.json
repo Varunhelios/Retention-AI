@@ -1,0 +1,54 @@
+{
+  "user_id": 1622,
+  "churn_probability": 63.87,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Week 3 Engagement",
+      "value": 246.94,
+      "shap_value": 1.1262401342391968,
+      "model": "Model A",
+      "description": "Activity level during their third week",
+      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (246 sessions) - significantly increases churn risk."
+    },
+    {
+      "feature": "Day 74",
+      "value": 109.0,
+      "shap_value": 0.4755318760871887,
+      "model": "Model A",
+      "description": "Day 74",
+      "explanation": "\ud83d\udcca Day 74: 109.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 49",
+      "value": 300.0,
+      "shap_value": 0.3262992799282074,
+      "model": "Model A",
+      "description": "Day 49",
+      "explanation": "\ud83d\udcca Day 49: 300.0 - significantly increases churn risk"
+    },
+    {
+      "feature": "Day 88",
+      "value": 178.37,
+      "shap_value": -0.28600963950157166,
+      "model": "Model A",
+      "description": "Day 88",
+      "explanation": "\ud83d\udcca Day 88: 178.37 - moderately reduces churn risk"
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 35.0,
+      "shap_value": -0.2714872360229492,
+      "model": "Model A",
+      "description": "Average Screen Time",
+      "explanation": "\ud83d\udcca Average Screen Time: 35.0 - moderately reduces churn risk"
+    }
+  ],
+  "recommendations": [
+    "Having trouble with your account? Our support team is here to help!",
+    "We'd love to hear how we can improve your experience. Share your feedback with us!",
+    "Discover new features in our latest update!"
+  ],
+  "chart_path": "outputs/charts/user_1622.png",
+  "model_b_used": false
+}
