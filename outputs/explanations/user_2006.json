@@ -1,54 +1,46 @@
 {
   "user_id": 2006,
-  "churn_probability": 99.87,
+  "churn_probability": 99.51,
   "risk_level": "High",
   "top_features": [
     {
+      "feature": "avg_daily_usage",
+      "value": 27.89022222222221,
+      "shap_value": 1.0698816776275635,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_22",
+      "value": 0.0,
+      "shap_value": 0.358732134103775,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.32679274678230286,
+      "model": "Model A"
+    },
+    {
       "feature": "Average Screen Time",
       "value": 0.0,
-      "shap_value": 3.2020416259765625,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 0.0 - significantly increases churn risk"
+      "shap_value": 0.2378014475107193,
+      "model": "Model A"
     },
     {
-      "feature": "New Password Request",
-      "value": 8.0,
-      "shap_value": 0.5131299495697021,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
-    },
-    {
-      "feature": "Week 2 Engagement",
-      "value": 177.07,
-      "shap_value": 0.40278974175453186,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (177 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "Day 32",
-      "value": 190.23,
-      "shap_value": 0.33554938435554504,
-      "model": "Model A",
-      "description": "Day 32",
-      "explanation": "\ud83d\udcca Day 32: 190.23 - significantly increases churn risk"
-    },
-    {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_18",
       "value": 0.0,
-      "shap_value": 0.3339424431324005,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.23673057556152344,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "We've missed you! Check out what's new since your last visit."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Send a 'we miss you' nudge with a simple return path.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_2006.png",
+  "chart_path": "outputs\\charts\\user_2006.png",
   "model_b_used": false
 }

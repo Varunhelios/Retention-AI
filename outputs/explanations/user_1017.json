@@ -1,54 +1,46 @@
 {
   "user_id": 1017,
-  "churn_probability": 95.79,
+  "churn_probability": 94.81,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 3 Engagement",
+      "feature": "avg_daily_usage",
+      "value": 16.101444444444446,
+      "shap_value": 0.7790111899375916,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.5436614751815796,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.297944039106369,
+      "model": "Model A"
     },
     {
-      "feature": "Day 35",
-      "value": 24.58,
-      "shap_value": -0.5099678635597229,
-      "model": "Model A",
-      "description": "Day 35",
-      "explanation": "\ud83d\udcca Day 35: 24.58 - significantly reduces churn risk"
+      "feature": "std_dev_daily_usage",
+      "value": 36.16240830330071,
+      "shap_value": -0.18948912620544434,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 18.0,
-      "shap_value": -0.5044173002243042,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (18 days) - significantly reduces churn risk. Still in critical onboarding period."
-    },
-    {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_29",
       "value": 0.0,
-      "shap_value": 0.4167587459087372,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.18678171932697296,
+      "model": "Model A"
     },
     {
-      "feature": "Week 4 Engagement",
+      "feature": "Day_22",
       "value": 0.0,
-      "shap_value": 0.3257528841495514,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.18473206460475922,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1017.png",
+  "chart_path": "outputs\\charts\\user_1017.png",
   "model_b_used": false
 }

@@ -1,54 +1,46 @@
 {
   "user_id": 1338,
-  "churn_probability": 92.73,
+  "churn_probability": 97.84,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "User Tenure",
-      "value": 37.0,
-      "shap_value": 0.7896183133125305,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (37 days) - significantly increases churn risk. Long-term relationship built."
+      "feature": "avg_daily_usage",
+      "value": 25.43288888888889,
+      "shap_value": 0.8943541049957275,
+      "model": "Model A"
     },
     {
-      "feature": "Week 4 Engagement",
+      "feature": "Day_29",
       "value": 0.0,
-      "shap_value": 0.5275071263313293,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.28563565015792847,
+      "model": "Model A"
     },
     {
-      "feature": "Late Usage Avg",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.3643098473548889,
-      "model": "Model A",
-      "description": "Late Usage Avg",
-      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+      "shap_value": 0.261584997177124,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 0.0,
-      "shap_value": 0.35661160945892334,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "feature": "Average Spent on App (INR)",
+      "value": 198.0,
+      "shap_value": 0.23378027975559235,
+      "model": "Model A"
     },
     {
-      "feature": "Average Screen Time",
-      "value": 35.0,
-      "shap_value": -0.2919151186943054,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 35.0 - moderately reduces churn risk"
+      "feature": "Day_20",
+      "value": 76.71,
+      "shap_value": -0.20051835477352142,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "Love having you! Consider sharing your experience in a review.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Ask for a public review or referrals; offer referral credits.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1338.png",
+  "chart_path": "outputs\\charts\\user_1338.png",
   "model_b_used": false
 }

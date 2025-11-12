@@ -1,54 +1,46 @@
 {
   "user_id": 1691,
-  "churn_probability": 98.35,
+  "churn_probability": 96.36,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 2 Engagement",
+      "feature": "avg_daily_usage",
+      "value": 45.88388888888889,
+      "shap_value": 0.7658807039260864,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.7177533507347107,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.394858717918396,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 300.0,
-      "shap_value": 0.6593245267868042,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly increases churn risk."
+      "feature": "Day_17",
+      "value": 207.1,
+      "shap_value": -0.24751710891723633,
+      "model": "Model A"
     },
     {
-      "feature": "Week 4 Engagement",
-      "value": 6.39,
-      "shap_value": -0.5001239776611328,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (6 sessions) - significantly reduces churn risk."
+      "feature": "Ratings",
+      "value": 10.0,
+      "shap_value": -0.18622136116027832,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
+      "feature": "Day_61",
       "value": 0.0,
-      "shap_value": 0.36228251457214355,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
-    },
-    {
-      "feature": "Day 37",
-      "value": 51.97,
-      "shap_value": -0.35085007548332214,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 51.97 - significantly reduces churn risk"
+      "shap_value": 0.18087705969810486,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1691.png",
+  "chart_path": "outputs\\charts\\user_1691.png",
   "model_b_used": false
 }

@@ -1,54 +1,46 @@
 {
   "user_id": 1808,
-  "churn_probability": 70.31,
-  "risk_level": "Medium",
+  "churn_probability": 82.16,
+  "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 2 Engagement",
-      "value": 289.25,
-      "shap_value": 0.6780115962028503,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (289 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "Day 86",
+      "feature": "Day_22",
       "value": 300.0,
-      "shap_value": 0.4425482451915741,
-      "model": "Model A",
-      "description": "Day 86",
-      "explanation": "\ud83d\udcca Day 86: 300.0 - significantly increases churn risk"
+      "shap_value": 0.5266302227973938,
+      "model": "Model A"
     },
     {
-      "feature": "Day 37",
-      "value": 31.23,
-      "shap_value": -0.43280619382858276,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 31.23 - significantly reduces churn risk"
+      "feature": "Day_61",
+      "value": 0.0,
+      "shap_value": 0.4500170946121216,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_54",
+      "value": 0.0,
+      "shap_value": 0.3574272394180298,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_20",
       "value": 164.29,
-      "shap_value": 0.3915746808052063,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (164 sessions) - significantly increases churn risk."
+      "shap_value": 0.3402920663356781,
+      "model": "Model A"
     },
     {
-      "feature": "Average Spent On App (Inr)",
-      "value": 26.0,
-      "shap_value": 0.330753892660141,
-      "model": "Model A",
-      "description": "Average Spent On App (Inr)",
-      "explanation": "\ud83d\udcca Average Spent On App (Inr): 26.0 - significantly increases churn risk"
+      "feature": "Day_79",
+      "value": 0.0,
+      "shap_value": 0.33304619789123535,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Love having you! Consider sharing your experience in a review."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Apologize and offer priority support to address low satisfaction.",
+    "Ask for a public review or referrals; offer referral credits.",
+    "Offer smart tips to help users explore underused features."
   ],
-  "chart_path": "outputs/charts/user_1808.png",
+  "chart_path": "outputs\\charts\\user_1808.png",
   "model_b_used": false
 }

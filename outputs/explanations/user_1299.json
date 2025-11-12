@@ -1,54 +1,45 @@
 {
   "user_id": 1299,
-  "churn_probability": 4.94,
+  "churn_probability": 8.98,
   "risk_level": "Low",
   "top_features": [
     {
-      "feature": "Week 1 Engagement",
+      "feature": "std_dev_daily_usage",
+      "value": 200.5673746128745,
+      "shap_value": 0.8255603313446045,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_26",
+      "value": 300.0,
+      "shap_value": -0.7954742908477783,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_11",
+      "value": 300.0,
+      "shap_value": -0.35591012239456177,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_76",
+      "value": 299.95,
+      "shap_value": -0.31909990310668945,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.6896724700927734,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83d\ude34 No activity in week 1 engagement - significantly increases churn risk. User was disengaged this week."
-    },
-    {
-      "feature": "Week 4 Engagement",
-      "value": 300.0,
-      "shap_value": -0.4812248647212982,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (300 sessions) - significantly reduces churn risk."
-    },
-    {
-      "feature": "Day 39",
-      "value": 300.0,
-      "shap_value": -0.4293059706687927,
-      "model": "Model A",
-      "description": "Day 39",
-      "explanation": "\ud83d\udcca Day 39: 300.0 - significantly reduces churn risk"
-    },
-    {
-      "feature": "Week 1 Engagement",
-      "value": 106.4,
-      "shap_value": -0.3630425035953522,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (106 sessions) - significantly reduces churn risk."
-    },
-    {
-      "feature": "Average Screen Time",
-      "value": 31.0,
-      "shap_value": -0.31022605299949646,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 31.0 - significantly reduces churn risk"
+      "shap_value": 0.27474960684776306,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!"
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1299.png",
+  "chart_path": "outputs\\charts\\user_1299.png",
   "model_b_used": false
 }

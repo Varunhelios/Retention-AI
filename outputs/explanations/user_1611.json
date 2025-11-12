@@ -1,54 +1,46 @@
 {
   "user_id": 1611,
-  "churn_probability": 10.21,
-  "risk_level": "Low",
+  "churn_probability": 97.16,
+  "risk_level": "High",
   "top_features": [
     {
-      "feature": "Day 37",
-      "value": 73.88,
-      "shap_value": -0.5924699902534485,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 73.88 - significantly reduces churn risk"
+      "feature": "avg_daily_usage",
+      "value": 36.669777777777774,
+      "shap_value": 0.924271285533905,
+      "model": "Model A"
     },
     {
-      "feature": "Week 4 Engagement",
-      "value": 87.27,
-      "shap_value": -0.47162967920303345,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (87 sessions) - significantly reduces churn risk."
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.5163482427597046,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 109.43,
-      "shap_value": -0.39247214794158936,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (109 sessions) - significantly reduces churn risk."
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.4684532880783081,
+      "model": "Model A"
     },
     {
-      "feature": "Day 88",
-      "value": 13.16,
-      "shap_value": -0.36749595403671265,
-      "model": "Model A",
-      "description": "Day 88",
-      "explanation": "\ud83d\udcca Day 88: 13.16 - significantly reduces churn risk"
+      "feature": "Day_20",
+      "value": 112.25,
+      "shap_value": 0.3941505551338196,
+      "model": "Model A"
     },
     {
-      "feature": "Day 39",
-      "value": 48.56,
-      "shap_value": -0.3663363754749298,
-      "model": "Model A",
-      "description": "Day 39",
-      "explanation": "\ud83d\udcca Day 39: 48.56 - significantly reduces churn risk"
+      "feature": "Day_16",
+      "value": 0.0,
+      "shap_value": -0.26520979404449463,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1611.png",
+  "chart_path": "outputs\\charts\\user_1611.png",
   "model_b_used": false
 }

@@ -1,54 +1,46 @@
 {
   "user_id": 1933,
-  "churn_probability": 76.79,
+  "churn_probability": 65.16,
   "risk_level": "Medium",
   "top_features": [
     {
-      "feature": "Week 1 Engagement",
+      "feature": "avg_daily_usage",
+      "value": 14.423444444444444,
+      "shap_value": 0.8602120280265808,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 1.6932305097579956,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83d\ude34 No activity in week 1 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.301321417093277,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 19.0,
-      "shap_value": -0.5726253390312195,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (19 days) - significantly reduces churn risk. Still in critical onboarding period."
-    },
-    {
-      "feature": "Week 1 Engagement",
-      "value": 59.56,
-      "shap_value": 0.4678274989128113,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (59 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_18",
       "value": 0.0,
-      "shap_value": 0.34955891966819763,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.2840217649936676,
+      "model": "Model A"
     },
     {
-      "feature": "Average Screen Time",
-      "value": 7.0,
-      "shap_value": 0.2479456067085266,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 7.0 - moderately increases churn risk"
+      "feature": "Day_22",
+      "value": 18.65,
+      "shap_value": -0.2806842625141144,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_16",
+      "value": 3.31,
+      "shap_value": -0.22836002707481384,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Love having you! Consider sharing your experience in a review."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Ask for quick feedback and provide a small perk to improve experience.",
+    "Thank them and suggest premium/value features they might like.",
+    "Offer smart tips to help users explore underused features."
   ],
-  "chart_path": "outputs/charts/user_1933.png",
+  "chart_path": "outputs\\charts\\user_1933.png",
   "model_b_used": false
 }

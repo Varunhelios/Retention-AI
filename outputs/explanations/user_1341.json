@@ -1,54 +1,46 @@
 {
   "user_id": 1341,
-  "churn_probability": 95.38,
+  "churn_probability": 94.16,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 49.0,
-      "shap_value": 1.0046123266220093,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 49.0 - significantly increases churn risk"
+      "feature": "avg_daily_usage",
+      "value": 20.41077777777778,
+      "shap_value": 0.9123812317848206,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 31.0,
-      "shap_value": 0.8736743330955505,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (31 days) - significantly increases churn risk. Long-term relationship built."
+      "feature": "std_dev_daily_usage",
+      "value": 36.3847130891433,
+      "shap_value": -0.3920096755027771,
+      "model": "Model A"
     },
     {
-      "feature": "New Password Request",
+      "feature": "Ratings",
       "value": 8.0,
-      "shap_value": 0.6217355132102966,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+      "shap_value": -0.38968560099601746,
+      "model": "Model A"
     },
     {
-      "feature": "Late Usage Avg",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.3671030104160309,
-      "model": "Model A",
-      "description": "Late Usage Avg",
-      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+      "shap_value": 0.33922526240348816,
+      "model": "Model A"
     },
     {
-      "feature": "Day 62",
-      "value": 0.0,
-      "shap_value": 0.29641807079315186,
-      "model": "Model A",
-      "description": "Day 62",
-      "explanation": "\ud83d\udcca Day 62: 0.0 - moderately increases churn risk"
+      "feature": "Day_29",
+      "value": 1.14,
+      "shap_value": 0.24464082717895508,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1341.png",
+  "chart_path": "outputs\\charts\\user_1341.png",
   "model_b_used": false
 }

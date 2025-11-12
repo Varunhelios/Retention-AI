@@ -1,54 +1,46 @@
 {
   "user_id": 1754,
-  "churn_probability": 2.02,
+  "churn_probability": 8.63,
   "risk_level": "Low",
   "top_features": [
     {
-      "feature": "Day 63",
+      "feature": "avg_daily_usage",
+      "value": 63.09899999999999,
+      "shap_value": 0.893095850944519,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_56",
+      "value": 105.85,
+      "shap_value": -0.36415472626686096,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_30",
+      "value": 112.82,
+      "shap_value": -0.2945191264152527,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_63",
       "value": 105.3,
-      "shap_value": -0.6942218542098999,
-      "model": "Model A",
-      "description": "Day 63",
-      "explanation": "\ud83d\udcca Day 63: 105.3 - significantly reduces churn risk"
+      "shap_value": -0.27151861786842346,
+      "model": "Model A"
     },
     {
-      "feature": "Day 88",
-      "value": 96.69,
-      "shap_value": -0.6041892170906067,
-      "model": "Model A",
-      "description": "Day 88",
-      "explanation": "\ud83d\udcca Day 88: 96.69 - significantly reduces churn risk"
-    },
-    {
-      "feature": "Day 85",
-      "value": 99.02,
-      "shap_value": -0.5487635731697083,
-      "model": "Model A",
-      "description": "Day 85",
-      "explanation": "\ud83d\udcca Day 85: 99.02 - significantly reduces churn risk"
-    },
-    {
-      "feature": "Day 37",
-      "value": 110.18,
-      "shap_value": -0.41209328174591064,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 110.18 - significantly reduces churn risk"
-    },
-    {
-      "feature": "Day 62",
-      "value": 105.62,
-      "shap_value": -0.4041908383369446,
-      "model": "Model A",
-      "description": "Day 62",
-      "explanation": "\ud83d\udcca Day 62: 105.62 - significantly reduces churn risk"
+      "feature": "Day_28",
+      "value": 111.86,
+      "shap_value": -0.2588353753089905,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Explore our app's key features to enhance your daily productivity and experience."
+    "Personalized onboarding to help you get started.",
+    "Weekly tips to help you get the most out of our platform.",
+    "Exclusive early access to new features.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1754.png",
+  "chart_path": "outputs\\charts\\user_1754.png",
   "model_b_used": false
 }

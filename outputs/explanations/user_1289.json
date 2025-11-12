@@ -1,54 +1,45 @@
 {
   "user_id": 1289,
-  "churn_probability": 6.36,
+  "churn_probability": 34.61,
   "risk_level": "Low",
   "top_features": [
     {
-      "feature": "Day 39",
-      "value": 67.45,
-      "shap_value": -0.5544844269752502,
-      "model": "Model A",
-      "description": "Day 39",
-      "explanation": "\ud83d\udcca Day 39: 67.45 - significantly reduces churn risk"
+      "feature": "avg_daily_usage",
+      "value": 38.126,
+      "shap_value": 1.1272594928741455,
+      "model": "Model A"
     },
     {
-      "feature": "Day 63",
-      "value": 40.11,
-      "shap_value": -0.5173261165618896,
-      "model": "Model A",
-      "description": "Day 63",
-      "explanation": "\ud83d\udcca Day 63: 40.11 - significantly reduces churn risk"
+      "feature": "Day_16",
+      "value": 0.0,
+      "shap_value": -0.3779216408729553,
+      "model": "Model A"
     },
     {
-      "feature": "Day 62",
-      "value": 42.72,
-      "shap_value": -0.47423532605171204,
-      "model": "Model A",
-      "description": "Day 62",
-      "explanation": "\ud83d\udcca Day 62: 42.72 - significantly reduces churn risk"
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.32610461115837097,
+      "model": "Model A"
     },
     {
-      "feature": "Day 85",
-      "value": 34.25,
-      "shap_value": -0.43372175097465515,
-      "model": "Model A",
-      "description": "Day 85",
-      "explanation": "\ud83d\udcca Day 85: 34.25 - significantly reduces churn risk"
+      "feature": "Day_20",
+      "value": 91.5,
+      "shap_value": -0.3207685649394989,
+      "model": "Model A"
     },
     {
       "feature": "Average Screen Time",
       "value": 49.0,
-      "shap_value": 0.4053220748901367,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 49.0 - significantly increases churn risk"
+      "shap_value": -0.26911377906799316,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1289.png",
+  "chart_path": "outputs\\charts\\user_1289.png",
   "model_b_used": false
 }

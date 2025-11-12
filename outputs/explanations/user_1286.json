@@ -1,54 +1,46 @@
 {
   "user_id": 1286,
-  "churn_probability": 99.26,
+  "churn_probability": 98.1,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 46.0,
-      "shap_value": 1.0064562559127808,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 46.0 - significantly increases churn risk"
+      "feature": "avg_daily_usage",
+      "value": 37.24466666666665,
+      "shap_value": 1.1169151067733765,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 54.0,
-      "shap_value": 0.6783363819122314,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (54 days) - significantly increases churn risk. Long-term relationship built."
-    },
-    {
-      "feature": "App Rating Given",
-      "value": 10.0,
-      "shap_value": 0.5840968489646912,
-      "model": "Model A",
-      "description": "Rating they gave our app",
-      "explanation": "\u2b50 High rating (10.0/5 stars) - significantly increases churn risk. User appreciates the app."
-    },
-    {
-      "feature": "Day 63",
-      "value": 28.74,
-      "shap_value": -0.28834208846092224,
-      "model": "Model A",
-      "description": "Day 63",
-      "explanation": "\ud83d\udcca Day 63: 28.74 - moderately reduces churn risk"
-    },
-    {
-      "feature": "Day 37",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.255852073431015,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 0.0 - moderately increases churn risk"
+      "shap_value": 0.39393454790115356,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_3",
+      "value": 116.8,
+      "shap_value": 0.2645714581012726,
+      "model": "Model A"
+    },
+    {
+      "feature": "Average Spent on App (INR)",
+      "value": 135.0,
+      "shap_value": 0.2639441192150116,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_83",
+      "value": 0.0,
+      "shap_value": 0.26160404086112976,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1286.png",
+  "chart_path": "outputs\\charts\\user_1286.png",
   "model_b_used": false
 }

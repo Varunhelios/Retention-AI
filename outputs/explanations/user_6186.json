@@ -1,0 +1,46 @@
+{
+  "user_id": 6186,
+  "churn_probability": 18.38,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Day_54",
+      "value": 260.97,
+      "shap_value": -0.576655387878418,
+      "model": "Model A"
+    },
+    {
+      "feature": "Average Spent on App (INR)",
+      "value": 981.68,
+      "shap_value": -0.5479761362075806,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_81",
+      "value": 2.69,
+      "shap_value": -0.28752589225769043,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_63",
+      "value": 300.0,
+      "shap_value": -0.21494320034980774,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_65",
+      "value": 175.52,
+      "shap_value": -0.21029777824878693,
+      "model": "Model A"
+    }
+  ],
+  "recommendations": [
+    "Apologize and offer priority support to address low satisfaction.",
+    "Send a 'we miss you' nudge with a simple return path.",
+    "Thank them and suggest premium/value features they might like.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
+  ],
+  "chart_path": "outputs\\charts\\user_6186.png",
+  "model_b_used": false
+}

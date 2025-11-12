@@ -1,54 +1,46 @@
 {
   "user_id": 1240,
-  "churn_probability": 72.47,
+  "churn_probability": 64.9,
   "risk_level": "Medium",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 41.0,
-      "shap_value": 1.0802615880966187,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 41.0 - significantly increases churn risk"
+      "feature": "avg_daily_usage",
+      "value": 28.341444444444445,
+      "shap_value": 0.8641286492347717,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 33.0,
-      "shap_value": 0.7526159882545471,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (33 days) - significantly increases churn risk. Long-term relationship built."
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.3530498743057251,
+      "model": "Model A"
     },
     {
-      "feature": "New Password Request",
-      "value": 8.0,
-      "shap_value": 0.46872803568840027,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+      "feature": "Day_20",
+      "value": 82.46,
+      "shap_value": -0.24352110922336578,
+      "model": "Model A"
     },
     {
-      "feature": "Late Usage Avg",
-      "value": 0.2933333333333333,
-      "shap_value": -0.3502102494239807,
-      "model": "Model A",
-      "description": "Late Usage Avg",
-      "explanation": "\ud83d\udcca Late Usage Avg: 0.2933333333333333 - significantly reduces churn risk"
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.2390189915895462,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
-      "value": 94.57,
-      "shap_value": -0.28150510787963867,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (94 sessions) - moderately reduces churn risk."
+      "feature": "Average Spent on App (INR)",
+      "value": 250.0,
+      "shap_value": 0.22588106989860535,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "Love having you! Consider sharing your experience in a review."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Thank them and suggest premium/value features they might like.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1240.png",
+  "chart_path": "outputs\\charts\\user_1240.png",
   "model_b_used": false
 }

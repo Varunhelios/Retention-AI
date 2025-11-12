@@ -1,54 +1,46 @@
 {
   "user_id": 1156,
-  "churn_probability": 57.63,
-  "risk_level": "Medium",
+  "churn_probability": 94.49,
+  "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 1 Engagement",
+      "feature": "avg_daily_usage",
+      "value": 69.93900000000001,
+      "shap_value": 0.9460695385932922,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.3681566119194031,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_20",
       "value": 300.0,
-      "shap_value": -0.5147475600242615,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (300 sessions) - significantly reduces churn risk."
+      "shap_value": 0.35423144698143005,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 300.0,
-      "shap_value": 0.5106912851333618,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly increases churn risk."
+      "feature": "Day_11",
+      "value": 217.54,
+      "shap_value": -0.3301660716533661,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 13.77,
-      "shap_value": -0.40553250908851624,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (13 sessions) - significantly reduces churn risk."
-    },
-    {
-      "feature": "Week 3 Engagement",
-      "value": 300.0,
-      "shap_value": -0.354201078414917,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly reduces churn risk."
-    },
-    {
-      "feature": "Week 3 Engagement",
-      "value": 121.14,
-      "shap_value": -0.31883153319358826,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (121 sessions) - significantly reduces churn risk."
+      "feature": "Day_61",
+      "value": 0.0,
+      "shap_value": 0.30584681034088135,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Love having you! Consider sharing your experience in a review.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Ask for a public review or referrals; offer referral credits.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1156.png",
+  "chart_path": "outputs\\charts\\user_1156.png",
   "model_b_used": false
 }

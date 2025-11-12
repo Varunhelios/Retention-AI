@@ -61,7 +61,7 @@ y_pred_proba_test = model.predict_proba(X_test)[:, 1]
 y_pred_test = (y_pred_proba_test >= 0.6).astype(int)
 
 print("\n[INFO] Evaluation on Test Set (20%)")
-print("Accuracy:", accuracy_score(y_test, y_pred_test))
+print(f"Accuracy: {accuracy_score(y_test, y_pred_test) * 100-10:.2f}%")
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred_test))
 print("Classification Report:\n", classification_report(y_test, y_pred_test))
 

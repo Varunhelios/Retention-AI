@@ -1,54 +1,46 @@
 {
   "user_id": 1722,
-  "churn_probability": 57.75,
+  "churn_probability": 77.84,
   "risk_level": "Medium",
   "top_features": [
     {
-      "feature": "Week 2 Engagement",
+      "feature": "avg_daily_usage",
+      "value": 13.195444444444444,
+      "shap_value": 0.8343406319618225,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_12",
       "value": 0.0,
-      "shap_value": 0.6327439546585083,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": -0.3302188515663147,
+      "model": "Model A"
     },
     {
-      "feature": "New Password Request",
-      "value": 8.0,
-      "shap_value": 0.5753848552703857,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
-    },
-    {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.38770803809165955,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.25605908036231995,
+      "model": "Model A"
     },
     {
-      "feature": "Day 31",
-      "value": 14.67,
-      "shap_value": -0.37538400292396545,
-      "model": "Model A",
-      "description": "Day 31",
-      "explanation": "\ud83d\udcca Day 31: 14.67 - significantly reduces churn risk"
+      "feature": "Day_11",
+      "value": 0.0,
+      "shap_value": 0.22890959680080414,
+      "model": "Model A"
     },
     {
-      "feature": "Day 37",
-      "value": 1.04,
-      "shap_value": -0.359176367521286,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 1.04 - significantly reduces churn risk"
+      "feature": "Day_20",
+      "value": 0.0,
+      "shap_value": -0.22414281964302063,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Explore our app's key features to enhance your daily productivity and experience."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Ask for a public review or referrals; offer referral credits.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1722.png",
+  "chart_path": "outputs\\charts\\user_1722.png",
   "model_b_used": false
 }

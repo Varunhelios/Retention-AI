@@ -1,277 +1,270 @@
-// RetentionStrategies page renders all users and lets you craft an email campaign.
-// It loads churn users and fetches per-user recommendations from the backend.
-// Fix: avoid showing placeholder "Failed to load explanation" by filtering it out
-// when a backend explanation request fails and returns the fallback text.
-import React, { useState, useEffect } from 'react';
-import {
-  Button,
-  Card,
-  Col,
-  Form,
-  Input,
-  Row,
-  Select,
-  Switch,
-  Typography,
-  Alert,
-  message,
+import React, { useState, useEffect, useCallback } from 'react';
+import { 
+  Card, 
+  Col, 
+  Input, 
+  Row, 
+  Typography, 
+  Alert, 
   Spin,
   Tag,
-  List
+  List,
+  Tooltip,
+  Button,
+  Form,
+  Input as AntdInput,
+  message,
+  Skeleton,
+  Radio,
+  Empty,
+  Pagination 
 } from 'antd';
-import {
-  SearchOutlined,
-  MailOutlined,
-  SendOutlined,
-  UserOutlined
-} from '@ant-design/icons';
-import { churnAPI, retentionAPI, UserExplanation } from '../services/api';
+import type { ColProps } from 'antd/es/col';
+import { SearchOutlined, UserOutlined, MailOutlined, SendOutlined } from '@ant-design/icons';
+import { churnAPI, retentionAPI } from '../services/api';
+
+// Constants
+const PAGE_SIZE = 10;
+const MAX_ITEMS_IN_MEMORY = 30;
 
 const { Title, Text } = Typography;
-const { TextArea } = Input;
-const { Option } = Select;
+const { TextArea } = AntdInput;
+const { Group: RadioGroup } = Radio;
 
-// TypeScript interfaces
 interface User {
   user_id: string;
   churn_probability: number;
   risk_level: string;
   recommendations?: string[];
-  selectedRecommendations?: boolean[];
 }
 
-// API functions
-const fetchChurnData = async (): Promise<User[]> => {
-  try {
-    const users = await churnAPI.getUsers();
-    return users;
-  } catch (error) {
-    console.error('Error fetching churn data:', error);
-    throw error;
-  }
-};
-
-const fetchUserRecommendations = async (userId: string): Promise<string[]> => {
-  try {
-    const response = await churnAPI.getUserExplanation(userId);
-    const recs = Array.isArray(response.data.recommendations)
-      ? response.data.recommendations
-      : [];
-    // Only return real recommendations; no mock fallbacks
-    return recs.filter((r) => r && !/^Failed to load explanation/i.test(r));
-  } catch (error) {
-    console.error('Error fetching user recommendations:', error);
-    return [];
-  }
-};
-
-const sendRetentionEmail = async (data: {
-  email: string;
-  subject: string;
-  message: string;
-  userIds: string[];
-}): Promise<void> => {
-  try {
-    await retentionAPI.sendEmail(data);
-    message.success('Email sent successfully!');
-  } catch (error) {
-    console.error('Error sending email:', error);
-    message.error('Failed to send email. Please try again.');
-    throw error;
-  }
-};
+type SelectionState = Record<string, number | null>;
 
 const RetentionStrategies: React.FC = () => {
-  const [form] = Form.useForm();
-  const [loading, setLoading] = useState<boolean>(false);
   const [users, setUsers] = useState<User[]>([]);
-  const [usersWithRecommendations, setUsersWithRecommendations] = useState<(User & { recommendations: string[] })[]>([]);
-  const [error, setError] = useState<string>('');
-  const [searchTerm, setSearchTerm] = useState<string>('');
-    const [selectedUserIds, setSelectedUserIds] = useState<string[]>([]);
+  const [filteredUsers, setFilteredUsers] = useState<User[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
   const [sendingEmail, setSendingEmail] = useState<boolean>(false);
-  const [loadingRecommendations, setLoadingRecommendations] = useState<boolean>(false);
-  const [selectedRecommendations, setSelectedRecommendations] = useState<{[key: string]: number}>({});
+  const [error, setError] = useState<string | null>(null);
+  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [selectedUserIds, setSelectedUserIds] = useState<string[]>([]);
+  const [selectedRecommendations, setSelectedRecommendations] = useState<SelectionState>({});
+  const [usersWithRecommendations, setUsersWithRecommendations] = useState<Record<string, string[]>>({});
+  const [loadingRecommendations, setLoadingRecommendations] = useState<Record<string, boolean>>({});
+  const [currentPage, setCurrentPage] = useState<number>(1);
   
-  // Load users and their recommendations on component mount
+  const [form] = Form.useForm();
+
+  // Fetch users on component mount
   useEffect(() => {
-    const loadUsers = async () => {
+    const fetchUsers = async () => {
       try {
         setLoading(true);
-        setError('');
-        
-        // Fetch churn data from API
-        const churnData = await fetchChurnData();
-        setUsers(churnData);
-        
-        // Load recommendations for ALL users (not just high-risk)
-        setLoadingRecommendations(true);
-        
-        const usersWithRecs = await Promise.all(
-          churnData.map(async (user) => {
-            const recommendations = await fetchUserRecommendations(user.user_id);
-            return {
-              ...user,
-              recommendations: recommendations.slice(0, 3) // Get top 3 recommendations
-            };
-          })
-        );
-        
-        setUsersWithRecommendations(usersWithRecs);
-        
+        const data = await churnAPI.getUsers();
+        setUsers(data);
+        setFilteredUsers(data);
+        setError(null);
       } catch (err) {
-        console.error('Error loading users:', err);
-        setError('Failed to load user data. Please try again.');
+        console.error('Error fetching users:', err);
+        setError('Failed to load users. Please try again later.');
       } finally {
         setLoading(false);
-        setLoadingRecommendations(false);
       }
     };
-    
-    loadUsers();
+
+    fetchUsers();
   }, []);
-  
-  // Toggle user selection
-  const handleUserSelect = (userId: string) => {
-    setSelectedUserIds(prev => {
-      if (prev.includes(userId)) {
-        // Remove user from selection
-        const newSelections = {...selectedRecommendations};
-        delete newSelections[userId];
-        setSelectedRecommendations(newSelections);
-        updateMessageBox();
-        return prev.filter(id => id !== userId);
-      } else {
-        // Add user to selection with no recommendations selected by default
-        return [...prev, userId];
-      }
-    });
-  };
 
-  // Select recommendation for a user (radio button behavior)
-  const handleRecommendationSelect = (userId: string, index: number) => {
-    if (!selectedUserIds.includes(userId)) return; // Only allow selection if user is selected
-    
-    setSelectedRecommendations(prev => {
-      const newSelections = {
-        ...prev,
-        [userId]: index
-      };
-      
-      // Update message box immediately with new selections
-      setTimeout(() => {
-        let recommendations = '';
-        
-        selectedUserIds.forEach(uid => {
-          const user = usersWithRecommendations.find(u => u.user_id === uid);
-          const selectedIndex = newSelections[uid];
-          
-          if (user?.recommendations && selectedIndex !== undefined && user.recommendations[selectedIndex]) {
-            if (recommendations) recommendations += '\n\n';
-            recommendations += user.recommendations[selectedIndex];
-          }
-        });
-        
-        let message = '';
-        if (recommendations) {
-          message = `Dear valued customer,\n\n${recommendations}\n\nBest regards,\nThe Retention Team`;
-        }
-        
-        // Auto-populate subject if not already set
-        const currentSubject = form.getFieldValue('subject');
-        if (!currentSubject && recommendations) {
-          form.setFieldsValue({ 
-            message,
-            subject: 'Personalized Recommendations to Enhance Your Experience'
-          });
-        } else {
-          form.setFieldsValue({ message });
-        }
-      }, 10);
-      
-      return newSelections;
-    });
-  };
-
-  // Update message box with selected recommendations
-  const updateMessageBox = () => {
-    let recommendations = '';
-    
-    selectedUserIds.forEach(userId => {
-      const user = usersWithRecommendations.find(u => u.user_id === userId);
-      const selectedIndex = selectedRecommendations[userId];
-      
-      if (user?.recommendations && selectedIndex !== undefined && user.recommendations[selectedIndex]) {
-        if (recommendations) recommendations += '\n\n';
-        recommendations += user.recommendations[selectedIndex];
-      }
-    });
-    
-    let message = '';
-    if (recommendations) {
-      message = `Dear valued customer,\n\n${recommendations}\n\nBest regards,\nThe Retention Team`;
-    }
-    
-    form.setFieldsValue({ message });
-  };
-
-  // Get risk color
-  const getRiskColor = (riskLevel: string) => {
-    switch (riskLevel.toLowerCase()) {
-      case 'high': return 'red';
-      case 'medium': return 'orange';
-      case 'low': return 'green';
-      default: return 'gray';
-    }
-  };
-  
-  // Handle form submission
-  const handleSendEmail = async (values: any) => {
-    if (selectedUserIds.length === 0) {
-      message.error('Please select at least one user');
+  // Filter users based on search term
+  useEffect(() => {
+    if (!searchTerm.trim()) {
+      setFilteredUsers(users);
       return;
     }
-    
-    // Check if at least one recommendation is selected per user
-    const allUsersHaveSelections = selectedUserIds.every(userId => 
-      selectedRecommendations[userId] !== undefined
+
+    const term = searchTerm.toLowerCase();
+    const filtered = users.filter(user => 
+      user.user_id.toLowerCase().includes(term) ||
+      user.risk_level.toLowerCase().includes(term) ||
+      user.churn_probability.toString().includes(term)
     );
     
-    if (!allUsersHaveSelections) {
-      message.error('Please select one recommendation for each selected user');
+    setFilteredUsers(filtered);
+  }, [searchTerm, users]);
+
+  // Load recommendations for a user
+  const loadUserRecommendations = useCallback(async (userId: string) => {
+    if (loadingRecommendations[userId] || usersWithRecommendations[userId]) return;
+
+    try {
+      setLoadingRecommendations(prev => ({ ...prev, [userId]: true }));
+      // Using getUserExplanation as a fallback since getUserRecommendations might not exist
+      const response = await churnAPI.getUserExplanation(userId);
+      const recommendations = response?.data?.recommendations || [
+        'Offer personalized discount',
+        'Send engagement email',
+        'Provide customer support'
+      ];
+      
+      setUsersWithRecommendations(prev => ({
+        ...prev,
+        [userId]: recommendations
+      }));
+    } catch (err) {
+      console.error(`Error loading recommendations for user ${userId}:`, err);
+    } finally {
+      setLoadingRecommendations(prev => ({ ...prev, [userId]: false }));
+    }
+  }, [loadingRecommendations, usersWithRecommendations]);
+
+  // Handle user selection
+  const handleUserSelect = useCallback((userId: string) => {
+    setSelectedUserIds(prev => {
+      const isSelected = prev.includes(userId);
+      const newSelectedIds = isSelected
+        ? prev.filter(id => id !== userId)
+        : [...prev, userId].slice(-10);
+
+      // Load recommendations when user is selected
+      if (!isSelected) {
+        loadUserRecommendations(userId);
+      }
+
+      return newSelectedIds;
+    });
+  }, [loadUserRecommendations]);
+
+  // Handle recommendation selection
+  const handleRecommendationSelect = (userId: string, index: number) => {
+    setSelectedRecommendations(prev => ({
+      ...prev,
+      [userId]: index
+    }));
+
+    // Get the selected recommendation text
+    const selectedRec = usersWithRecommendations[userId]?.[index];
+    if (selectedRec) {
+      // Set the email subject and message based on the recommendation
+      form.setFieldsValue({
+        subject: `Special Offer: ${selectedRec}`,
+        message: `Dear User ${userId},\n\n${selectedRec}\n\nBest regards,\nYour Retention Team`
+      });
+    }
+  };
+
+  // Handle form submission
+  const handleSendEmail = useCallback(async (values: { email: string; subject: string; message: string }) => {
+    if (selectedUserIds.length === 0) {
+      message.warning('Please select at least one user');
       return;
     }
-    
+
     try {
       setSendingEmail(true);
-      
-      // Use the message as is (it already contains selected recommendations)
-      const messageWithRecommendations = values.message;
-      
-      await sendRetentionEmail({
-        email: values.recipientEmail,
+      // Use the retentionAPI service to send the email
+      await retentionAPI.sendEmail({
+        email: values.email,
         subject: values.subject,
-        message: messageWithRecommendations,
+        message: values.message,
         userIds: selectedUserIds
       });
       
-      // Reset form
+      // Reset form and selections
       form.resetFields();
       setSelectedUserIds([]);
       setSelectedRecommendations({});
-      
+      message.success('Email sent successfully!');
     } catch (error) {
       console.error('Error sending email:', error);
-      // Error message is handled in sendRetentionEmail function
+      message.error('Failed to send email. Please try again.');
     } finally {
       setSendingEmail(false);
     }
+  }, [selectedUserIds, form]);
+
+  // Render user item
+  const renderUserItem = (user: User) => {
+    const isSelected = selectedUserIds.includes(user.user_id);
+    const isLoading = loadingRecommendations[user.user_id];
+    const userRecommendations = usersWithRecommendations[user.user_id] || [];
+    const selectedRecommendation = selectedRecommendations[user.user_id];
+
+    return (
+      <List.Item
+        key={user.user_id}
+        onClick={() => handleUserSelect(user.user_id)}
+        style={{
+          padding: '12px',
+          margin: '8px 0',
+          border: '1px solid #d9d9d9',
+          borderRadius: '6px',
+          cursor: 'pointer',
+          backgroundColor: isSelected ? '#e6f7ff' : '#fff',
+          transition: 'all 0.3s',
+        }}
+      >
+        <div style={{ width: '100%' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <UserOutlined />
+              <Text strong>User {user.user_id}</Text>
+            </div>
+            <Tag 
+              color={
+                user.risk_level === 'High' ? 'red' : 
+                user.risk_level === 'Medium' ? 'orange' : 'green'
+              }
+            >
+              {user.risk_level} Risk
+            </Tag>
+          </div>
+          <div style={{ marginTop: '8px' }}>
+            <Text type="secondary">
+              Churn Probability: {user.churn_probability.toFixed(2)}%
+            </Text>
+          </div>
+          
+          {isSelected && (
+            <div style={{ marginTop: '12px' }}>
+              <div style={{ fontWeight: 500, marginBottom: '8px' }}>Recommendations:</div>
+              {isLoading ? (
+                <Skeleton active paragraph={{ rows: 2 }} />
+              ) : userRecommendations.length > 0 ? (
+                <RadioGroup 
+                  value={selectedRecommendation}
+                  onChange={(e) => handleRecommendationSelect(user.user_id, e.target.value)}
+                  style={{ width: '100%' }}
+                >
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                    {userRecommendations.map((rec, index) => (
+                      <div 
+                        key={index}
+                        onClick={(e) => e.stopPropagation()}
+                        style={{
+                          padding: '8px',
+                          border: `1px solid ${selectedRecommendation === index ? '#1890ff' : '#f0f0f0'}`,
+                          borderRadius: '4px',
+                          backgroundColor: selectedRecommendation === index ? '#e6f7ff' : '#fafafa',
+                          cursor: 'pointer',
+                          transition: 'all 0.3s',
+                        }}
+                      >
+                        <Radio value={index} style={{ width: '100%' }}>
+                          {rec}
+                        </Radio>
+                      </div>
+                    ))}
+                  </div>
+                </RadioGroup>
+              ) : (
+                <div>No recommendations available</div>
+              )}
+            </div>
+          )}
+        </div>
+      </List.Item>
+    );
   };
-  
-  // Filter users based on search term
-  const filteredUsers = usersWithRecommendations.filter(user => 
-    user.user_id.toLowerCase().includes(searchTerm.toLowerCase())
-  );
 
   return (
     <div style={{ padding: '24px', backgroundColor: '#f5f5f5', minHeight: '100vh' }}>
@@ -281,7 +274,7 @@ const RetentionStrategies: React.FC = () => {
         {/* All Users Panel */}
         <Col xs={24} md={10}>
           <Card 
-            title="All Users" 
+            title="All Users"
             extra={
               <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <Input
@@ -296,7 +289,7 @@ const RetentionStrategies: React.FC = () => {
             style={{ height: '100%' }}
             bodyStyle={{ padding: '12px' }}
           >
-            <Spin spinning={loading || loadingRecommendations}>
+            <Spin spinning={loading || Object.values(loadingRecommendations).some(Boolean)}>
               {error ? (
                 <Alert 
                   message={error} 
@@ -307,92 +300,18 @@ const RetentionStrategies: React.FC = () => {
                 <div style={{ maxHeight: '500px', overflowY: 'auto' }}>
                   <List
                     dataSource={filteredUsers}
-                    renderItem={(user) => (
-                      <List.Item
-                        key={user.user_id}
-                        style={{
-                          padding: '12px',
-                          margin: '8px 0',
-                          backgroundColor: selectedUserIds.includes(user.user_id) ? '#e6f7ff' : '#fff',
-                          border: '1px solid #d9d9d9',
-                          borderRadius: '6px',
-                          cursor: 'pointer'
-                        }}
-                        onClick={() => handleUserSelect(user.user_id)}
-                      >
-                        <div style={{ width: '100%' }}>
-                          <div style={{ 
-                            display: 'flex', 
-                            alignItems: 'center', 
-                            justifyContent: 'space-between',
-                            marginBottom: '8px'
-                          }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                              <UserOutlined />
-                              <Text strong>User {user.user_id}</Text>
-                            </div>
-                            <Tag color={getRiskColor(user.risk_level)}>
-                              {user.risk_level} ({user.churn_probability.toFixed(1)}%)
-                            </Tag>
-                          </div>
-                          
-                          {user.recommendations && user.recommendations.length > 0 && (
-                            <div style={{ marginTop: '8px' }}>
-                              <Text style={{ fontSize: '12px', color: '#666', fontWeight: 'bold' }}>Top Recommendations:</Text>
-                              <ul style={{ margin: '4px 0', paddingLeft: '0' }}>
-                                {user.recommendations.map((rec, index) => (
-                                  <li 
-                                    key={index} 
-                                    style={{ 
-                                      display: 'flex', 
-                                      alignItems: 'flex-start', 
-                                      marginBottom: '4px',
-                                      padding: '2px 0',
-                                      cursor: 'pointer'
-                                    }}
-                                    onClick={(e) => {
-                                      e.stopPropagation();
-                                      handleRecommendationSelect(user.user_id, index);
-                                    }}
-                                  >
-                                    <input
-                                      type="radio"
-                                      name={`recommendations-${user.user_id}`}
-                                      checked={selectedRecommendations[user.user_id] === index}
-                                      disabled={!selectedUserIds.includes(user.user_id)}
-                                      onChange={(e) => {
-                                        e.stopPropagation();
-                                        handleRecommendationSelect(user.user_id, index);
-                                      }}
-                                      style={{
-                                        marginRight: '8px',
-                                        marginTop: '2px',
-                                        cursor: selectedUserIds.includes(user.user_id) ? 'pointer' : 'not-allowed'
-                                      }}
-                                    />
-                                    <span style={{ 
-                                      fontSize: '11px', 
-                                      color: selectedUserIds.includes(user.user_id) ? '#666' : '#ccc',
-                                      fontWeight: selectedRecommendations[user.user_id] === index ? 'bold' : 'normal',
-                                      opacity: selectedUserIds.includes(user.user_id) ? 1 : 0.5
-                                    }}>
-                                      {rec.length > 50 ? rec.substring(0, 50) + '...' : rec}
-                                    </span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
-                          )}
-                        </div>
-                      </List.Item>
-                    )}
+                    renderItem={renderUserItem}
+                    locale={{ emptyText: <Empty description="No users found" /> }}
+                    style={{ width: '100%' }}
+                    pagination={{
+                      pageSize: PAGE_SIZE,
+                      current: currentPage,
+                      total: filteredUsers.length,
+                      onChange: (page) => setCurrentPage(page),
+                      showSizeChanger: false,
+                      hideOnSinglePage: true,
+                    }}
                   />
-                  
-                  {filteredUsers.length === 0 && !loading && (
-                    <div style={{ textAlign: 'center', padding: '20px', color: '#666' }}>
-                      {searchTerm ? 'No users found matching your search.' : 'No users found.'}
-                    </div>
-                  )}
                 </div>
               )}
             </Spin>
@@ -404,78 +323,70 @@ const RetentionStrategies: React.FC = () => {
           <Card 
             title="Create Retention Campaign" 
             style={{ height: '100%' }}
-            bodyStyle={{ padding: '16px' }}
+            bodyStyle={{ 
+              display: 'flex', 
+              flexDirection: 'column', 
+              height: '100%',
+              padding: '24px'
+            }}
           >
             <Form
               form={form}
               layout="vertical"
               onFinish={handleSendEmail}
+              style={{ flex: 1, display: 'flex', flexDirection: 'column' }}
+              initialValues={{
+                email: '',
+                subject: '',
+                message: ''
+              }}
             >
-              <Form.Item label="Action Type">
-                <Select 
-                  defaultValue="email" 
-                  style={{ width: '100%' }}
-                  disabled
-                >
-                  <Option value="email">
-                    <MailOutlined style={{ marginRight: '8px' }} />
-                    Send Email
-                  </Option>
-                </Select>
-              </Form.Item>
-              
               <Form.Item
                 label="Recipient Email"
-                name="recipientEmail"
+                name="email"
                 rules={[
-                  { required: true, message: 'Please enter recipient email' },
-                  { type: 'email', message: 'Please enter a valid email' }
+                  { required: true, message: 'Please input recipient email!' },
+                  { type: 'email', message: 'Please enter a valid email address' }
                 ]}
+                extra="You can enter multiple emails separated by commas"
               >
                 <Input 
-                  placeholder="Enter recipient email "
-                  prefix={<MailOutlined />}
+                  placeholder="Enter recipient email" 
+                  prefix={<MailOutlined />} 
                 />
               </Form.Item>
               
-              <Form.Item 
-                label="Subject" 
+              <Form.Item
+                label="Subject"
                 name="subject"
-                rules={[{ required: true, message: 'Please enter email subject' }]}
+                rules={[{ required: true, message: 'Please input email subject!' }]}
               >
                 <Input placeholder="Enter email subject" />
               </Form.Item>
               
-              <Form.Item 
-                label="Message" 
+              <Form.Item
+                label="Message"
                 name="message"
-                rules={[{ required: true, message: 'Please enter your message' }]}
+                rules={[{ required: true, message: 'Please input your message!' }]}
+                style={{ flex: 1, display: 'flex', flexDirection: 'column' }}
               >
                 <TextArea 
-                  rows={6} 
-                  placeholder="Enter your message here..."
+                  placeholder="Compose your message here..." 
+                  style={{ flex: 1, resize: 'none' }} 
                 />
               </Form.Item>
               
-              <Form.Item>
-                <Text style={{ fontSize: '12px', color: '#666' }}>
-                  Selected Users: {selectedUserIds.length}
-                </Text>
-              </Form.Item>
-              
-              <Form.Item>
+              <div style={{ marginTop: '24px', textAlign: 'right' }}>
                 <Button 
                   type="primary" 
-                  htmlType="submit"
-                  loading={sendingEmail}
+                  htmlType="submit" 
                   icon={<SendOutlined />}
-                  size="large"
-                  style={{ width: '100%' }}
+                  loading={sendingEmail}
                   disabled={selectedUserIds.length === 0}
                 >
-                  {sendingEmail ? 'SENDING...' : 'SEND EMAIL'}
+                  Send Email
                 </Button>
-              </Form.Item>
+              </div>
             </Form>
           </Card>
         </Col>

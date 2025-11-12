@@ -1,54 +1,45 @@
 {
   "user_id": 1219,
-  "churn_probability": 98.3,
+  "churn_probability": 99.55,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 41.0,
-      "shap_value": 0.6597537398338318,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 41.0 - significantly increases churn risk"
+      "feature": "std_dev_daily_usage",
+      "value": 164.07430599332432,
+      "shap_value": 1.6568379402160645,
+      "model": "Model A"
     },
     {
-      "feature": "Day 86",
+      "feature": "Day_76",
       "value": 300.0,
-      "shap_value": 0.6167585253715515,
-      "model": "Model A",
-      "description": "Day 86",
-      "explanation": "\ud83d\udcca Day 86: 300.0 - significantly increases churn risk"
+      "shap_value": 0.5350029468536377,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 222.65,
-      "shap_value": 0.40827926993370056,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (222 sessions) - significantly increases churn risk."
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.4979214072227478,
+      "model": "Model A"
     },
     {
-      "feature": "App Rating Given",
-      "value": 9.0,
-      "shap_value": 0.26566070318222046,
-      "model": "Model A",
-      "description": "Rating they gave our app",
-      "explanation": "\u2b50 High rating (9.0/5 stars) - moderately increases churn risk. User appreciates the app."
+      "feature": "Day_77",
+      "value": 300.0,
+      "shap_value": 0.39182135462760925,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 88.0,
-      "shap_value": 0.26408976316452026,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (88 days) - moderately increases churn risk. Long-term relationship built."
+      "feature": "Day_86",
+      "value": 300.0,
+      "shap_value": 0.22055013477802277,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1219.png",
+  "chart_path": "outputs\\charts\\user_1219.png",
   "model_b_used": false
 }

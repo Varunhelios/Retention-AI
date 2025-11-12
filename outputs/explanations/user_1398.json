@@ -1,54 +1,46 @@
 {
   "user_id": 1398,
-  "churn_probability": 97.14,
+  "churn_probability": 95.77,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "User Tenure",
-      "value": 28.0,
-      "shap_value": 0.8458133935928345,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (28 days) - significantly increases churn risk. Still in critical onboarding period."
+      "feature": "avg_daily_usage",
+      "value": 23.047444444444444,
+      "shap_value": 0.9297425746917725,
+      "model": "Model A"
     },
     {
-      "feature": "Late Usage Avg",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.36996954679489136,
-      "model": "Model A",
-      "description": "Late Usage Avg",
-      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+      "shap_value": 0.3095732629299164,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 68.56,
-      "shap_value": 0.2597163915634155,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (68 sessions) - moderately increases churn risk."
+      "feature": "Average Spent on App (INR)",
+      "value": 188.0,
+      "shap_value": 0.25168076157569885,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
-      "value": 75.52,
-      "shap_value": 0.254150927066803,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (75 sessions) - moderately increases churn risk."
-    },
-    {
-      "feature": "Day 37",
+      "feature": "Day_29",
       "value": 0.0,
-      "shap_value": 0.2517349421977997,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 0.0 - moderately increases churn risk"
+      "shap_value": 0.2404622733592987,
+      "model": "Model A"
+    },
+    {
+      "feature": "std_dev_daily_usage",
+      "value": 37.76278578210259,
+      "shap_value": -0.19193200767040253,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1398.png",
+  "chart_path": "outputs\\charts\\user_1398.png",
   "model_b_used": false
 }

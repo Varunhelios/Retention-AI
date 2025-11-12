@@ -25,7 +25,7 @@ os.makedirs(EXPLAIN_DIR, exist_ok=True)
 os.makedirs(CHART_DIR, exist_ok=True)
 
 # === Load Models and Metadata ===
-model_a = joblib.load(os.path.join(MODEL_DIR, "model_a_latest.pkl"))
+model_a = joblib.load(os.path.join(MODEL_DIR, "model_a.pkl"))
 model_b = joblib.load(os.path.join(MODEL_DIR, "model_b_latest.pkl"))
 with open(os.path.join(MODEL_DIR, "model_a_features.json")) as f:
     features_a = json.load(f)
@@ -39,55 +39,103 @@ df_b = pd.read_csv(os.path.join(DATASET_DIR, "model_b_train.csv"))
 sentiment_df = pd.read_csv(os.path.join(DATASET_DIR, "sentiment_analysis.csv"))
 df_churn = pd.read_csv(os.path.join(DATASET_DIR, "churn_prediction.csv"))
 
+def safe_get_float(row: dict, key: str, default: float = 0.0) -> float:
+    """Safely get a float value from a dictionary with a default fallback."""
+    try:
+        value = row.get(key, default)
+        if value is None or (isinstance(value, float) and pd.isna(value)):
+            return default
+        return float(value)
+    except (ValueError, TypeError):
+        return default
+
+def safe_get_int(row: dict, key: str, default: int = 0) -> int:
+    """Safely get an integer value from a dictionary with a default fallback."""
+    try:
+        value = row.get(key, default)
+        if value is None or (isinstance(value, float) and pd.isna(value)):
+            return default
+        return int(float(value))
+    except (ValueError, TypeError):
+        return default
+
 def build_recommendations(row: dict) -> list:
     """Rule-based recommendations using usage patterns, ratings, sentiment, and churn flags."""
     recs: list[str] = []
 
-    # Usage drop / churn behavior
-    drop_in = float(row.get("drop_in_usage", 0) or 0)
-    is_churned = int(row.get("is_churned", 0) or 0)
-    total_days_active = int(row.get("total_days_active", 0) or 0)
-    avg_screen = float(row.get("Average Screen Time", 0) or 0)
-    ratings = float(row.get("Ratings", 0) or 0)
-    last_visited = float(row.get("Last Visited Minutes", 0) or 0)
+    # Safely get all values with proper type conversion and NaN handling
+    drop_in = safe_get_float(row, "drop_in_usage")
+    is_churned = safe_get_int(row, "is_churned")
+    total_days_active = safe_get_int(row, "total_days_active")
+    avg_screen = safe_get_float(row, "Average Screen Time")
+    ratings = safe_get_float(row, "Ratings")
+    last_visited = safe_get_float(row, "Last Visited Minutes")
+    
+    # Handle sentiment separately as it might not exist for all users
+    sentiment = None
+    if "compound_score" in row and row["compound_score"] is not None and not pd.isna(row["compound_score"]):
+        try:
+            sentiment = float(row["compound_score"])
+        except (ValueError, TypeError):
+            pass
 
-    sentiment = row.get("compound_score")
-
+    # Generate recommendations based on available data
     if is_churned == 1 or total_days_active == 0:
         recs.append("Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.")
+    
     if drop_in >= 40:
         recs.append("Re-engage with a personalized check-in and highlight new features they missed.")
-    if avg_screen > 240:
-        recs.append("Encourage healthier usage with screen-break reminders and wellness tips.")
-    if ratings and ratings <= 2:
-        recs.append("Apologize and offer priority support to address low satisfaction.")
-    elif ratings and ratings <= 3:
-        recs.append("Ask for quick feedback and provide a small perk to improve experience.")
-    if last_visited > 7 * 24 * 60:  # more than ~7 days in minutes
-        recs.append("Send a 'we miss you' nudge with a simple return path.")
+    
+    if avg_screen > 0:  # Only include if we have screen time data
+        if avg_screen > 240:
+            recs.append("Encourage healthier usage with screen-break reminders and wellness tips.")
+    
+    if ratings > 0:  # Only include if we have ratings data
+        if ratings <= 2:
+            recs.append("Apologize and offer priority support to address low satisfaction.")
+        elif ratings <= 3:
+            recs.append("Ask for quick feedback and provide a small perk to improve experience.")
+    
+    if last_visited > 0:  # Only include if we have last visited data
+        if last_visited > 7 * 24 * 60:  # more than ~7 days in minutes
+            recs.append("Send a 'we miss you' nudge with a simple return path.")
 
-    if pd.notna(sentiment):
-        s = float(sentiment)
-        if s < -0.2:
+    # Add sentiment-based recommendations if available
+    if sentiment is not None:
+        if sentiment < -0.2:
             recs.append("Reach out with empathetic support to address dissatisfaction.")
-        elif -0.2 <= s <= 0.2:
+        elif -0.2 <= sentiment <= 0.2:
             recs.append("Invite feedback via a 1-question survey to understand needs.")
-        elif 0.2 < s <= 0.5:
+        elif 0.2 < sentiment <= 0.5:
             recs.append("Thank them and suggest premium/value features they might like.")
-        elif s > 0.5:
+        elif sentiment > 0.5:
             recs.append("Ask for a public review or referrals; offer referral credits.")
 
-    # Always include a discovery prompt
-    recs.append("Offer smart tips to help users explore underused features.")
-
-    # Deduplicate and cap to 5
-    deduped: list[str] = []
-    for r in recs:
-        if r not in deduped:
-            deduped.append(r)
-        if len(deduped) == 5:
-            break
-    return deduped
+    # Add default recommendations if we don't have enough specific ones
+    if not recs:
+        recs.extend([
+            "Personalized onboarding to help you get started.",
+            "Weekly tips to help you get the most out of our platform.",
+            "Exclusive early access to new features."
+        ])
+    
+    # Always include some general recommendations if we have space
+    general_recs = [
+        "Offer smart tips to help users explore underused features.",
+        "Check out our knowledge base for helpful guides and tutorials.",
+        "Join our community forum to connect with other users."
+    ]
+    
+    # Add general recommendations if we have space
+    for rec in general_recs:
+        if len(recs) < 5 and rec not in recs:
+            recs.append(rec)
+    
+    # Ensure we have at least 3 and at most 5 recommendations
+    while len(recs) < 3:
+        recs.append("Explore our latest features and updates.")
+    
+    return recs[:5]  # Return at most 5 recommendations
 
 
 def generate_for_user(user_id: int) -> None:
