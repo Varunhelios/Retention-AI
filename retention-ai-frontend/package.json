@@ -2,6 +2,7 @@
   "name": "retention-ai-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@ant-design/icons": "^6.1.0",
     "@tanstack/react-query": "^5.90.7",
@@ -28,6 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "vercel-build": "npm run build",
+    "preview": "vite preview",
     "eject": "react-scripts eject",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx --fix",
