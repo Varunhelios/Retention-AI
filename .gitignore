@@ -1,7 +1,42 @@
+# ======================
 # Environment variables
+# ======================
 .env
+.env.local
+.env.*.local
 
-# Python
+# =========
+# OS files
+# =========
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ======
+# Logs
+# ======
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========
+# IDE/Editors
+# =========
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =====================
+# Python (backend)
+# =====================
 __pycache__/
 *.py[cod]
 *$py.class
@@ -19,32 +54,55 @@ parts/
 sdist/
 var/
 wheels/
+pip-wheel-metadata/
+share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.pytype/
+coverage.xml
+htmlcov/
+.coverage*
+.cache/
+.ipynb_checkpoints
 
-# Virtual Environment
+# Virtual environments
 venv/
 env/
 ENV/
+.venv/
+.python-version
 
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
+# =====================
+# Node/Frontend (Vite/CRA)
+# =====================
+node_modules/
+retention-ai-frontend/node_modules/
+retention-ai-frontend/node_modules/.cache/
+retention-ai-frontend/.cache/
+retention-ai-frontend/.parcel-cache/
+retention-ai-frontend/coverage/
+retention-ai-frontend/build/
+retention-ai-frontend/dist/
+retention-ai-frontend/.vite/
+retention-ai-frontend/.next/
+retention-ai-frontend/.turbo/
+retention-ai-frontend/npm-debug.log*
+retention-ai-frontend/yarn-debug.log*
+retention-ai-frontend/yarn-error.log*
+retention-ai-frontend/pnpm-debug.log*
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# If you ever use lockfiles you don’t want:
+# retention-ai-frontend/package-lock.json
+# retention-ai-frontend/yarn.lock
+# retention-ai-frontend/pnpm-lock.yaml
 
-# Logs
-*.log
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# =====================
+# Project artifacts
+# =====================
+# Keep datasets tracked; ignore outputs and large generated assets
+outputs/
+models/
