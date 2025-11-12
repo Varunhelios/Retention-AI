@@ -1,54 +1,46 @@
 {
   "user_id": 1977,
-  "churn_probability": 98.86,
+  "churn_probability": 95.7,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 1 Engagement",
+      "feature": "avg_daily_usage",
+      "value": 43.55755555555555,
+      "shap_value": 0.7848653793334961,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_11",
+      "value": 265.5,
+      "shap_value": -0.5949264764785767,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.8871223330497742,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83d\ude34 No activity in week 1 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.464747816324234,
+      "model": "Model A"
     },
     {
-      "feature": "Average Screen Time",
-      "value": 48.0,
-      "shap_value": 0.8807568550109863,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 48.0 - significantly increases churn risk"
+      "feature": "Day_7",
+      "value": 300.0,
+      "shap_value": 0.31369131803512573,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
-      "value": 297.46,
-      "shap_value": 0.5699558258056641,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (297 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "Day 36",
-      "value": 161.22,
-      "shap_value": -0.3049343228340149,
-      "model": "Model A",
-      "description": "Day 36",
-      "explanation": "\ud83d\udcca Day 36: 161.22 - significantly reduces churn risk"
-    },
-    {
-      "feature": "Day 88",
+      "feature": "Day_46",
       "value": 0.0,
-      "shap_value": 0.29855018854141235,
-      "model": "Model A",
-      "description": "Day 88",
-      "explanation": "\ud83d\udcca Day 88: 0.0 - moderately increases churn risk"
+      "shap_value": 0.3086954653263092,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1977.png",
+  "chart_path": "outputs\\charts\\user_1977.png",
   "model_b_used": false
 }

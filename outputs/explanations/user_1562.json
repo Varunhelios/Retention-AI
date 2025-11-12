@@ -1,54 +1,45 @@
 {
   "user_id": 1562,
-  "churn_probability": 99.0,
+  "churn_probability": 95.91,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "New Password Request",
-      "value": 8.0,
-      "shap_value": 0.7624157071113586,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+      "feature": "std_dev_daily_usage",
+      "value": 173.52071285908087,
+      "shap_value": 1.7286440134048462,
+      "model": "Model A"
     },
     {
-      "feature": "Week 5 Engagement",
-      "value": 278.8,
-      "shap_value": 0.5204139351844788,
-      "model": "Model A",
-      "description": "Activity level during their fifth week",
-      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (278 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "Day 86",
+      "feature": "Day_70",
       "value": 300.0,
-      "shap_value": 0.49056485295295715,
-      "model": "Model A",
-      "description": "Day 86",
-      "explanation": "\ud83d\udcca Day 86: 300.0 - significantly increases churn risk"
+      "shap_value": 0.20793697237968445,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_15",
       "value": 0.0,
-      "shap_value": 0.4632594883441925,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.20037303864955902,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
-      "value": 0.0,
-      "shap_value": 0.43620461225509644,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+      "feature": "Day_29",
+      "value": 278.8,
+      "shap_value": -0.1786136031150818,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_39",
+      "value": 300.0,
+      "shap_value": -0.17753058671951294,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1562.png",
+  "chart_path": "outputs\\charts\\user_1562.png",
   "model_b_used": false
 }

@@ -1,0 +1,46 @@
+{
+  "user_id": 6251,
+  "churn_probability": 17.13,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Day_22",
+      "value": 20.84,
+      "shap_value": -0.5132938623428345,
+      "model": "Model A"
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 74.08,
+      "shap_value": -0.3175339996814728,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_60",
+      "value": 209.95,
+      "shap_value": -0.3087936341762543,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_20",
+      "value": 26.49,
+      "shap_value": -0.3009999096393585,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_51",
+      "value": 247.14,
+      "shap_value": -0.3002954125404358,
+      "model": "Model A"
+    }
+  ],
+  "recommendations": [
+    "Apologize and offer priority support to address low satisfaction.",
+    "Send a 'we miss you' nudge with a simple return path.",
+    "Invite feedback via a 1-question survey to understand needs.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
+  ],
+  "chart_path": "outputs\\charts\\user_6251.png",
+  "model_b_used": false
+}

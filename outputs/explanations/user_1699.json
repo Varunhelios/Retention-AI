@@ -1,54 +1,46 @@
 {
   "user_id": 1699,
-  "churn_probability": 99.62,
+  "churn_probability": 95.56,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "User Tenure",
-      "value": 33.0,
-      "shap_value": 0.7185235023498535,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (33 days) - significantly increases churn risk. Long-term relationship built."
+      "feature": "avg_daily_usage",
+      "value": 23.23611111111111,
+      "shap_value": 0.8999199867248535,
+      "model": "Model A"
     },
     {
-      "feature": "New Password Request",
-      "value": 8.0,
-      "shap_value": 0.5969878435134888,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
-    },
-    {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.4313124120235443,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.3186276853084564,
+      "model": "Model A"
     },
     {
-      "feature": "Day 32",
-      "value": 53.18,
-      "shap_value": 0.4136238396167755,
-      "model": "Model A",
-      "description": "Day 32",
-      "explanation": "\ud83d\udcca Day 32: 53.18 - significantly increases churn risk"
+      "feature": "Average Spent on App (INR)",
+      "value": 208.0,
+      "shap_value": 0.2954578697681427,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_15",
       "value": 0.0,
-      "shap_value": 0.3679606318473816,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.24963858723640442,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_22",
+      "value": 75.37,
+      "shap_value": -0.21722443401813507,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1699.png",
+  "chart_path": "outputs\\charts\\user_1699.png",
   "model_b_used": false
 }

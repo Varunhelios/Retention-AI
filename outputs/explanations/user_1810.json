@@ -1,54 +1,46 @@
 {
   "user_id": 1810,
-  "churn_probability": 83.7,
+  "churn_probability": 99.5,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Day 37",
-      "value": 49.35,
-      "shap_value": -0.5834709405899048,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 49.35 - significantly reduces churn risk"
+      "feature": "avg_daily_usage",
+      "value": 45.54566666666666,
+      "shap_value": 1.1704360246658325,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.49195075035095215,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.42498090863227844,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_22",
       "value": 0.0,
-      "shap_value": 0.48591428995132446,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.402121365070343,
+      "model": "Model A"
     },
     {
-      "feature": "Day 32",
-      "value": 170.09,
-      "shap_value": 0.4690234065055847,
-      "model": "Model A",
-      "description": "Day 32",
-      "explanation": "\ud83d\udcca Day 32: 170.09 - significantly increases churn risk"
-    },
-    {
-      "feature": "Week 4 Engagement",
+      "feature": "Day_53",
       "value": 0.0,
-      "shap_value": 0.39104247093200684,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.3188023865222931,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_83",
+      "value": 0.0,
+      "shap_value": 0.2462403029203415,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We'd love to hear how we can improve your experience. Share your feedback with us!",
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "As a valued customer, check out our premium features for an enhanced experience."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Reach out with empathetic support to address dissatisfaction.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1810.png",
+  "chart_path": "outputs\\charts\\user_1810.png",
   "model_b_used": false
 }

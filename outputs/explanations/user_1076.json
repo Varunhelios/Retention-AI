@@ -1,54 +1,46 @@
 {
   "user_id": 1076,
-  "churn_probability": 2.32,
+  "churn_probability": 40.78,
   "risk_level": "Low",
   "top_features": [
     {
-      "feature": "Day 63",
-      "value": 79.64,
-      "shap_value": -0.7347586750984192,
-      "model": "Model A",
-      "description": "Day 63",
-      "explanation": "\ud83d\udcca Day 63: 79.64 - significantly reduces churn risk"
+      "feature": "avg_daily_usage",
+      "value": 34.03111111111112,
+      "shap_value": 1.0307488441467285,
+      "model": "Model A"
     },
     {
-      "feature": "Day 88",
-      "value": 2.41,
-      "shap_value": -0.6967899799346924,
-      "model": "Model A",
-      "description": "Day 88",
-      "explanation": "\ud83d\udcca Day 88: 2.41 - significantly reduces churn risk"
+      "feature": "Average Screen Time",
+      "value": 50.0,
+      "shap_value": -0.35768765211105347,
+      "model": "Model A"
     },
     {
-      "feature": "Day 62",
-      "value": 42.88,
-      "shap_value": -0.6503425240516663,
-      "model": "Model A",
-      "description": "Day 62",
-      "explanation": "\ud83d\udcca Day 62: 42.88 - significantly reduces churn risk"
+      "feature": "Day_53",
+      "value": 0.0,
+      "shap_value": 0.291948527097702,
+      "model": "Model A"
     },
     {
-      "feature": "Day 37",
-      "value": 36.65,
-      "shap_value": -0.5913695096969604,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 36.65 - significantly reduces churn risk"
+      "feature": "Day_29",
+      "value": 134.15,
+      "shap_value": -0.2792811095714569,
+      "model": "Model A"
     },
     {
-      "feature": "Day 85",
-      "value": 80.67,
-      "shap_value": -0.5242143869400024,
-      "model": "Model A",
-      "description": "Day 85",
-      "explanation": "\ud83d\udcca Day 85: 80.67 - significantly reduces churn risk"
+      "feature": "Day_16",
+      "value": 0.0,
+      "shap_value": -0.2241581678390503,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app.",
-    "Join our community to connect with other users and share experiences."
+    "Personalized onboarding to help you get started.",
+    "Weekly tips to help you get the most out of our platform.",
+    "Exclusive early access to new features.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1076.png",
+  "chart_path": "outputs\\charts\\user_1076.png",
   "model_b_used": false
 }

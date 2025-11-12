@@ -1,0 +1,46 @@
+{
+  "user_id": 8004,
+  "churn_probability": 98.92,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "Day_49",
+      "value": 79.31,
+      "shap_value": 0.4614642560482025,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_3",
+      "value": 223.63,
+      "shap_value": 0.40456798672676086,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_54",
+      "value": 64.84,
+      "shap_value": 0.36369842290878296,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_86",
+      "value": 109.46,
+      "shap_value": 0.298140287399292,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_77",
+      "value": 300.0,
+      "shap_value": 0.29477038979530334,
+      "model": "Model A"
+    }
+  ],
+  "recommendations": [
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Send a 'we miss you' nudge with a simple return path.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
+  ],
+  "chart_path": "outputs\\charts\\user_8004.png",
+  "model_b_used": false
+}

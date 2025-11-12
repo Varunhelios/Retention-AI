@@ -1,54 +1,46 @@
 {
   "user_id": 1279,
-  "churn_probability": 99.34,
+  "churn_probability": 98.2,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 1 Engagement",
+      "feature": "std_dev_daily_usage",
+      "value": 250.6936306200671,
+      "shap_value": 1.4609959125518799,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 1.3081810474395752,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83d\ude34 No activity in week 1 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.3924427926540375,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
-      "value": 300.0,
-      "shap_value": 0.484575092792511,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (300 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "Week 1 Engagement",
-      "value": 250.66,
-      "shap_value": 0.37431439757347107,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (250 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "User Tenure",
-      "value": 42.0,
-      "shap_value": 0.37292376160621643,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (42 days) - significantly increases churn risk. Long-term relationship built."
-    },
-    {
-      "feature": "Day 88",
+      "feature": "Day_61",
       "value": 0.0,
-      "shap_value": 0.3528806269168854,
-      "model": "Model A",
-      "description": "Day 88",
-      "explanation": "\ud83d\udcca Day 88: 0.0 - significantly increases churn risk"
+      "shap_value": 0.38441750407218933,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_39",
+      "value": 0.0,
+      "shap_value": 0.32549017667770386,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_37",
+      "value": 0.0,
+      "shap_value": 0.24523398280143738,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1279.png",
+  "chart_path": "outputs\\charts\\user_1279.png",
   "model_b_used": false
 }

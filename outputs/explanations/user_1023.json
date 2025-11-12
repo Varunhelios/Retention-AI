@@ -1,54 +1,46 @@
 {
   "user_id": 1023,
-  "churn_probability": 97.97,
+  "churn_probability": 97.41,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "App Rating Given",
-      "value": 9.0,
-      "shap_value": 0.6149675250053406,
-      "model": "Model A",
-      "description": "Rating they gave our app",
-      "explanation": "\u2b50 High rating (9.0/5 stars) - significantly increases churn risk. User appreciates the app."
+      "feature": "avg_daily_usage",
+      "value": 18.572444444444447,
+      "shap_value": 0.813647449016571,
+      "model": "Model A"
     },
     {
-      "feature": "Week 1 Engagement",
-      "value": 103.25,
-      "shap_value": -0.3661178648471832,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (103 sessions) - significantly reduces churn risk."
+      "feature": "drop_in_usage",
+      "value": 55.71733333333334,
+      "shap_value": 0.4698661267757416,
+      "model": "Model A"
     },
     {
-      "feature": "Late Usage Avg",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.35345879197120667,
-      "model": "Model A",
-      "description": "Late Usage Avg",
-      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+      "shap_value": 0.2898966073989868,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 22.15,
-      "shap_value": -0.32594043016433716,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (22 sessions) - significantly reduces churn risk."
+      "feature": "std_dev_daily_usage",
+      "value": 35.0888329914109,
+      "shap_value": -0.22696533799171448,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 25.0,
-      "shap_value": 0.29275718331336975,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (25 days) - moderately increases churn risk. Still in critical onboarding period."
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.21474689245224,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1023.png",
+  "chart_path": "outputs\\charts\\user_1023.png",
   "model_b_used": false
 }

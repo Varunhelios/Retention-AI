@@ -38,17 +38,7 @@ const Sidebar: React.FC = () => {
         zIndex: 10,
       }}
     >
-      <div 
-        className="logo" 
-        style={{ 
-          padding: '20px 16px', 
-          color: 'white', 
-          textAlign: 'center',
-          borderBottom: '1px solid rgba(255, 255, 255, 0.1)'
-        }}
-      >
-        <h2 style={{ color: '#fff', margin: 0, fontSize: '20px' }}>Retention AI</h2>
-      </div>
+      {/* Logo removed as requested */}
       <Menu
         theme="dark"
         mode="inline"

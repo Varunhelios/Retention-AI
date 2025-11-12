@@ -1,54 +1,45 @@
 {
   "user_id": 1883,
-  "churn_probability": 98.58,
+  "churn_probability": 96.51,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 2 Engagement",
+      "feature": "avg_daily_usage",
+      "value": 10.472,
+      "shap_value": 0.9390880465507507,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.9993372559547424,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.310479074716568,
+      "model": "Model A"
     },
     {
-      "feature": "Week 4 Engagement",
+      "feature": "Day_12",
       "value": 0.0,
-      "shap_value": 0.4120689630508423,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": -0.22549693286418915,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 13.0,
-      "shap_value": -0.3982139825820923,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (13 days) - significantly reduces churn risk. Still in critical onboarding period."
+      "feature": "early_usage_avg",
+      "value": 31.416,
+      "shap_value": 0.22335457801818848,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_22",
       "value": 0.0,
-      "shap_value": 0.33565542101860046,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
-    },
-    {
-      "feature": "Std Dev Daily Usage",
-      "value": 31.03127459026827,
-      "shap_value": 0.32647332549095154,
-      "model": "Model A",
-      "description": "Std Dev Daily Usage",
-      "explanation": "\ud83d\udcca Std Dev Daily Usage: 31.03127459026827 - significantly increases churn risk"
+      "shap_value": 0.20570777356624603,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1883.png",
+  "chart_path": "outputs\\charts\\user_1883.png",
   "model_b_used": false
 }

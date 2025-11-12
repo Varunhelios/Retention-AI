@@ -1,54 +1,46 @@
 {
   "user_id": 1316,
-  "churn_probability": 98.47,
+  "churn_probability": 93.94,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 47.0,
-      "shap_value": 0.7671952843666077,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 47.0 - significantly increases churn risk"
+      "feature": "avg_daily_usage",
+      "value": 18.424222222222227,
+      "shap_value": 0.8611997365951538,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 19.0,
-      "shap_value": -0.7591230869293213,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (19 days) - significantly reduces churn risk. Still in critical onboarding period."
+      "feature": "std_dev_daily_usage",
+      "value": 37.18355565550472,
+      "shap_value": -0.25440818071365356,
+      "model": "Model A"
     },
     {
-      "feature": "App Rating Given",
-      "value": 10.0,
-      "shap_value": 0.5856038928031921,
-      "model": "Model A",
-      "description": "Rating they gave our app",
-      "explanation": "\u2b50 High rating (10.0/5 stars) - significantly increases churn risk. User appreciates the app."
-    },
-    {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_29",
       "value": 0.0,
-      "shap_value": 0.41889554262161255,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.23284319043159485,
+      "model": "Model A"
     },
     {
-      "feature": "Week 1 Engagement",
-      "value": 109.35,
-      "shap_value": -0.3249618411064148,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (109 sessions) - significantly reduces churn risk."
+      "feature": "Day_26",
+      "value": 0.0,
+      "shap_value": 0.21412713825702667,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.1858556866645813,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app.",
-    "Join our community to connect with other users and share experiences."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1316.png",
+  "chart_path": "outputs\\charts\\user_1316.png",
   "model_b_used": false
 }

@@ -1,54 +1,46 @@
 {
   "user_id": 1171,
-  "churn_probability": 98.81,
+  "churn_probability": 95.56,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "New Password Request",
-      "value": 8.0,
-      "shap_value": 0.5990359783172607,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+      "feature": "avg_daily_usage",
+      "value": 56.86611111111111,
+      "shap_value": 1.0310490131378174,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 232.99,
-      "shap_value": -0.49238330125808716,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (232 sessions) - significantly reduces churn risk."
+      "feature": "Day_11",
+      "value": 273.25,
+      "shap_value": -0.7418081760406494,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 31.0,
-      "shap_value": 0.4681949317455292,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (31 days) - significantly increases churn risk. Long-term relationship built."
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.4288431406021118,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 258.16,
-      "shap_value": 0.418649822473526,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (258 sessions) - significantly increases churn risk."
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.27670273184776306,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
+      "feature": "Day_4",
       "value": 300.0,
-      "shap_value": 0.4077584445476532,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (300 sessions) - significantly increases churn risk."
+      "shap_value": 0.2616679072380066,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1171.png",
+  "chart_path": "outputs\\charts\\user_1171.png",
   "model_b_used": false
 }

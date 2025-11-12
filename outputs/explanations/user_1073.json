@@ -1,54 +1,46 @@
 {
   "user_id": 1073,
-  "churn_probability": 56.52,
-  "risk_level": "Medium",
+  "churn_probability": 94.9,
+  "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 3 Engagement",
+      "feature": "std_dev_daily_usage",
+      "value": 199.83853071605475,
+      "shap_value": 1.3529773950576782,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_76",
       "value": 300.0,
-      "shap_value": 1.0489681959152222,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly increases churn risk."
+      "shap_value": 0.6855306029319763,
+      "model": "Model A"
     },
     {
-      "feature": "Day 86",
+      "feature": "Day_49",
+      "value": 0.0,
+      "shap_value": -0.42772942781448364,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_72",
       "value": 300.0,
-      "shap_value": 0.49080637097358704,
-      "model": "Model A",
-      "description": "Day 86",
-      "explanation": "\ud83d\udcca Day 86: 300.0 - significantly increases churn risk"
+      "shap_value": 0.29334262013435364,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 227.74,
-      "shap_value": 0.36910921335220337,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (227 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "Week 5 Engagement",
-      "value": 266.94,
-      "shap_value": 0.3363543450832367,
-      "model": "Model A",
-      "description": "Activity level during their fifth week",
-      "explanation": "\ud83c\udfaf Good activity in week 5 engagement (266 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "Week 4 Engagement",
-      "value": 280.87,
-      "shap_value": 0.31363004446029663,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (280 sessions) - significantly increases churn risk."
+      "feature": "Day_35",
+      "value": 194.81,
+      "shap_value": 0.2910136878490448,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Invite feedback via a 1-question survey to understand needs.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1073.png",
+  "chart_path": "outputs\\charts\\user_1073.png",
   "model_b_used": false
 }

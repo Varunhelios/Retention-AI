@@ -1,54 +1,46 @@
 {
   "user_id": 2004,
-  "churn_probability": 72.36,
+  "churn_probability": 65.21,
   "risk_level": "Medium",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 6.0,
-      "shap_value": 1.3908257484436035,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 6.0 - significantly increases churn risk"
+      "feature": "avg_daily_usage",
+      "value": 18.842888888888893,
+      "shap_value": 0.8742070198059082,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 20.0,
-      "shap_value": -0.7377219200134277,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (20 days) - significantly reduces churn risk. Still in critical onboarding period."
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.24748656153678894,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 6.93,
-      "shap_value": -0.37414661049842834,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (6 sessions) - significantly reduces churn risk."
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.23893150687217712,
+      "model": "Model A"
     },
     {
-      "feature": "Week 1 Engagement",
-      "value": 87.78,
-      "shap_value": 0.24022912979125977,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (87 sessions) - moderately increases churn risk."
+      "feature": "Day_22",
+      "value": 0.0,
+      "shap_value": 0.20396913588047028,
+      "model": "Model A"
     },
     {
-      "feature": "Week 1 Engagement",
-      "value": 167.68,
-      "shap_value": 0.222427099943161,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (167 sessions) - moderately increases churn risk."
+      "feature": "New Password Request",
+      "value": 1.0,
+      "shap_value": 0.20039120316505432,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Invite feedback via a 1-question survey to understand needs.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_2004.png",
+  "chart_path": "outputs\\charts\\user_2004.png",
   "model_b_used": false
 }

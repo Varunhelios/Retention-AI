@@ -1,54 +1,46 @@
 {
   "user_id": 1292,
-  "churn_probability": 99.82,
+  "churn_probability": 98.13,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 0.0,
-      "shap_value": 2.98543119430542,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 0.0 - significantly increases churn risk"
-    },
-    {
-      "feature": "Week 2 Engagement",
-      "value": 300.0,
-      "shap_value": 0.4851498603820801,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (300 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "User Tenure",
-      "value": 34.0,
-      "shap_value": 0.45358210802078247,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (34 days) - significantly increases churn risk. Long-term relationship built."
-    },
-    {
-      "feature": "Week 3 Engagement",
-      "value": 300.0,
-      "shap_value": 0.4332573413848877,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly increases churn risk."
+      "feature": "avg_daily_usage",
+      "value": 75.68099999999998,
+      "shap_value": 0.7610357999801636,
+      "model": "Model A"
     },
     {
       "feature": "New Password Request",
       "value": 13.0,
-      "shap_value": 0.32107239961624146,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (13) - significantly increases churn risk. Significant login friction."
+      "shap_value": 0.6061170697212219,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.49944302439689636,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_11",
+      "value": 300.0,
+      "shap_value": -0.49379780888557434,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_48",
+      "value": 300.0,
+      "shap_value": 0.33436307311058044,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "We've missed you! Check out what's new since your last visit."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Send a 'we miss you' nudge with a simple return path.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1292.png",
+  "chart_path": "outputs\\charts\\user_1292.png",
   "model_b_used": false
 }

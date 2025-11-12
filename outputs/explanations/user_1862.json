@@ -1,54 +1,46 @@
 {
   "user_id": 1862,
-  "churn_probability": 4.48,
-  "risk_level": "Low",
+  "churn_probability": 80.07,
+  "risk_level": "High",
   "top_features": [
     {
-      "feature": "Day 51",
-      "value": 144.22,
-      "shap_value": -0.9071486592292786,
-      "model": "Model A",
-      "description": "Day 51",
-      "explanation": "\ud83d\udcca Day 51: 144.22 - significantly reduces churn risk"
+      "feature": "std_dev_daily_usage",
+      "value": 235.78009038526747,
+      "shap_value": 0.703732967376709,
+      "model": "Model A"
     },
     {
-      "feature": "Day 88",
-      "value": 31.84,
-      "shap_value": -0.5925403237342834,
-      "model": "Model A",
-      "description": "Day 88",
-      "explanation": "\ud83d\udcca Day 88: 31.84 - significantly reduces churn risk"
+      "feature": "Day_36",
+      "value": 0.0,
+      "shap_value": 0.30446508526802063,
+      "model": "Model A"
     },
     {
-      "feature": "Average Screen Time",
-      "value": 22.0,
-      "shap_value": -0.46592867374420166,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 22.0 - significantly reduces churn risk"
+      "feature": "Day_22",
+      "value": 0.0,
+      "shap_value": 0.2911435067653656,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 37.3,
-      "shap_value": -0.3978159725666046,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (37 sessions) - significantly reduces churn risk."
+      "feature": "Day_60",
+      "value": 201.39,
+      "shap_value": -0.28562304377555847,
+      "model": "Model A"
     },
     {
-      "feature": "Day 85",
-      "value": 300.0,
-      "shap_value": -0.3681568503379822,
-      "model": "Model A",
-      "description": "Day 85",
-      "explanation": "\ud83d\udcca Day 85: 300.0 - significantly reduces churn risk"
+      "feature": "Day_5",
+      "value": 0.0,
+      "shap_value": -0.2768598198890686,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Personalized onboarding to help you get started.",
+    "Weekly tips to help you get the most out of our platform.",
+    "Exclusive early access to new features.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1862.png",
+  "chart_path": "outputs\\charts\\user_1862.png",
   "model_b_used": false
 }

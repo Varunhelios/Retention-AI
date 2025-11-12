@@ -1,54 +1,46 @@
 {
   "user_id": 1273,
-  "churn_probability": 95.95,
+  "churn_probability": 95.79,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "New Password Request",
-      "value": 8.0,
-      "shap_value": 0.6513586640357971,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
+      "feature": "avg_daily_usage",
+      "value": 32.58266666666667,
+      "shap_value": 1.0802154541015625,
+      "model": "Model A"
     },
     {
-      "feature": "Day 37",
-      "value": 65.65,
-      "shap_value": -0.5506410002708435,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 65.65 - significantly reduces churn risk"
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.31414711475372314,
+      "model": "Model A"
     },
     {
-      "feature": "Average Screen Time",
-      "value": 43.0,
-      "shap_value": 0.5307433605194092,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 43.0 - significantly increases churn risk"
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.24457809329032898,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 47.0,
-      "shap_value": 0.4581190347671509,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (47 days) - significantly increases churn risk. Long-term relationship built."
+      "feature": "Day_53",
+      "value": 0.0,
+      "shap_value": 0.2226344496011734,
+      "model": "Model A"
     },
     {
-      "feature": "Day 35",
-      "value": 69.46,
-      "shap_value": -0.33923548460006714,
-      "model": "Model A",
-      "description": "Day 35",
-      "explanation": "\ud83d\udcca Day 35: 69.46 - significantly reduces churn risk"
+      "feature": "Day_20",
+      "value": 0.0,
+      "shap_value": -0.219427227973938,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "Love having you! Consider sharing your experience in a review.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Ask for a public review or referrals; offer referral credits.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1273.png",
+  "chart_path": "outputs\\charts\\user_1273.png",
   "model_b_used": false
 }

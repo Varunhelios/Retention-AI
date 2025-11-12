@@ -1,54 +1,46 @@
 {
   "user_id": 1272,
-  "churn_probability": 71.06,
+  "churn_probability": 58.45,
   "risk_level": "Medium",
   "top_features": [
     {
-      "feature": "App Rating Given",
+      "feature": "avg_daily_usage",
+      "value": 19.09177777777777,
+      "shap_value": 0.8318188190460205,
+      "model": "Model A"
+    },
+    {
+      "feature": "Ratings",
       "value": 9.0,
-      "shap_value": 0.6055629253387451,
-      "model": "Model A",
-      "description": "Rating they gave our app",
-      "explanation": "\u2b50 High rating (9.0/5 stars) - significantly increases churn risk. User appreciates the app."
+      "shap_value": -0.3810964822769165,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 24.0,
-      "shap_value": 0.43264827132225037,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (24 days) - significantly increases churn risk. Still in critical onboarding period."
-    },
-    {
-      "feature": "Late Usage Avg",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.3086872398853302,
-      "model": "Model A",
-      "description": "Late Usage Avg",
-      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+      "shap_value": 0.30910560488700867,
+      "model": "Model A"
     },
     {
-      "feature": "Week 1 Engagement",
-      "value": 106.58,
-      "shap_value": 0.23689402639865875,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (106 sessions) - moderately increases churn risk."
+      "feature": "Day_61",
+      "value": 0.0,
+      "shap_value": 0.24553433060646057,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
-      "value": 161.39,
-      "shap_value": 0.2258467674255371,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (161 sessions) - moderately increases churn risk."
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.1730894297361374,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Invite feedback via a 1-question survey to understand needs.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1272.png",
+  "chart_path": "outputs\\charts\\user_1272.png",
   "model_b_used": false
 }

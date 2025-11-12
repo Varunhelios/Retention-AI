@@ -1,54 +1,46 @@
 {
   "user_id": 1989,
-  "churn_probability": 5.11,
-  "risk_level": "Low",
+  "churn_probability": 52.08,
+  "risk_level": "Medium",
   "top_features": [
     {
-      "feature": "Week 1 Engagement",
+      "feature": "Day_6",
       "value": 300.0,
-      "shap_value": -0.5979616641998291,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (300 sessions) - significantly reduces churn risk."
+      "shap_value": -1.1154974699020386,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 31.0,
-      "shap_value": 0.3186013400554657,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (31 days) - significantly increases churn risk. Long-term relationship built."
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.32247382402420044,
+      "model": "Model A"
     },
     {
-      "feature": "Week 4 Engagement",
-      "value": 70.0,
-      "shap_value": -0.29089871048927307,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (70 sessions) - moderately reduces churn risk."
+      "feature": "Day_5",
+      "value": 300.0,
+      "shap_value": -0.25635474920272827,
+      "model": "Model A"
     },
     {
-      "feature": "Day 63",
-      "value": 19.12,
-      "shap_value": -0.28876790404319763,
-      "model": "Model A",
-      "description": "Day 63",
-      "explanation": "\ud83d\udcca Day 63: 19.12 - moderately reduces churn risk"
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.24087806046009064,
+      "model": "Model A"
     },
     {
-      "feature": "Day 37",
-      "value": 258.26,
-      "shap_value": -0.2534604072570801,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 258.26 - moderately reduces churn risk"
+      "feature": "Day_20",
+      "value": 300.0,
+      "shap_value": 0.2080407589673996,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Love having you! Consider sharing your experience in a review."
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Ask for quick feedback and provide a small perk to improve experience.",
+    "Thank them and suggest premium/value features they might like.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1989.png",
+  "chart_path": "outputs\\charts\\user_1989.png",
   "model_b_used": false
 }

@@ -1,54 +1,45 @@
 {
   "user_id": 1647,
-  "churn_probability": 40.59,
-  "risk_level": "Low",
+  "churn_probability": 50.94,
+  "risk_level": "Medium",
   "top_features": [
     {
-      "feature": "Week 3 Engagement",
+      "feature": "std_dev_daily_usage",
+      "value": 338.80005615008884,
+      "shap_value": 0.577039897441864,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_11",
+      "value": 215.84,
+      "shap_value": -0.5314856767654419,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_31",
       "value": 300.0,
-      "shap_value": 0.6896228194236755,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly increases churn risk."
+      "shap_value": -0.2932744324207306,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
-      "value": 0.0,
-      "shap_value": 0.493798166513443,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
-    },
-    {
-      "feature": "New Password Request",
-      "value": 8.0,
-      "shap_value": 0.49171945452690125,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
-    },
-    {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_1",
       "value": 300.0,
-      "shap_value": -0.32051119208335876,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (300 sessions) - significantly reduces churn risk."
+      "shap_value": -0.23560890555381775,
+      "model": "Model A"
     },
     {
-      "feature": "Average Screen Time",
-      "value": 32.0,
-      "shap_value": -0.279730886220932,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 32.0 - moderately reduces churn risk"
+      "feature": "Day_63",
+      "value": 300.0,
+      "shap_value": -0.23240725696086884,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "As a valued customer, check out our premium features for an enhanced experience."
+    "Ask for a public review or referrals; offer referral credits.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1647.png",
+  "chart_path": "outputs\\charts\\user_1647.png",
   "model_b_used": false
 }

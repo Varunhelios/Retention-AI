@@ -1,54 +1,46 @@
 {
   "user_id": 1442,
-  "churn_probability": 98.01,
+  "churn_probability": 98.83,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 2 Engagement",
+      "feature": "std_dev_daily_usage",
+      "value": 189.4805661908234,
+      "shap_value": 1.2763694524765015,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
+      "value": 0.0,
+      "shap_value": 0.5364105105400085,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_11",
       "value": 300.0,
-      "shap_value": 0.7947428226470947,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (300 sessions) - significantly increases churn risk."
+      "shap_value": -0.3381996750831604,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
+      "feature": "Day_30",
       "value": 0.0,
-      "shap_value": 0.4968832731246948,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.27576762437820435,
+      "model": "Model A"
     },
     {
-      "feature": "Day 32",
-      "value": 186.28,
-      "shap_value": 0.38273686170578003,
-      "model": "Model A",
-      "description": "Day 32",
-      "explanation": "\ud83d\udcca Day 32: 186.28 - significantly increases churn risk"
-    },
-    {
-      "feature": "Week 3 Engagement",
-      "value": 0.0,
-      "shap_value": 0.38210707902908325,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
-    },
-    {
-      "feature": "User Tenure",
-      "value": 36.0,
-      "shap_value": 0.36075523495674133,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (36 days) - significantly increases churn risk. Long-term relationship built."
+      "feature": "Day_31",
+      "value": 213.7,
+      "shap_value": -0.25953805446624756,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1442.png",
+  "chart_path": "outputs\\charts\\user_1442.png",
   "model_b_used": false
 }

@@ -99,10 +99,12 @@ export const churnAPI = {
   getUsers: async (): Promise<User[]> => {
     try {
       const response = await api.get('/api/users');
-      return response.data;
+      // Handle both response formats for backward compatibility
+      return Array.isArray(response.data) ? response.data : (response.data?.data || []);
     } catch (error) {
       console.error('Error fetching users:', error);
-      throw error;
+      // Return empty array instead of throwing to prevent UI crash
+      return [];
     }
   },
   
@@ -211,7 +213,14 @@ export const retentionAPI = {
     userIds: string[];
   }) => {
     try {
-      const response = await api.post('/api/send-retention-email', emailData);
+      // Map the frontend field names to backend expected field names
+      const payload = {
+        to_email: emailData.email,  // Map 'email' to 'to_email'
+        subject: emailData.subject,
+        message: emailData.message,
+        user_ids: emailData.userIds  // Map 'userIds' to 'user_ids' if needed by backend
+      };
+      const response = await api.post('/api/send-retention-email', payload);
       return response.data;
     } catch (error) {
       console.error('Error sending retention email:', error);

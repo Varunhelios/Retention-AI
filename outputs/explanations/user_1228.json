@@ -1,54 +1,46 @@
 {
   "user_id": 1228,
-  "churn_probability": 98.22,
+  "churn_probability": 93.47,
   "risk_level": "High",
   "top_features": [
     {
+      "feature": "avg_daily_usage",
+      "value": 14.894111111111112,
+      "shap_value": 0.7846210598945618,
+      "model": "Model A"
+    },
+    {
       "feature": "Average Screen Time",
       "value": 3.0,
-      "shap_value": 3.22432541847229,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 3.0 - significantly increases churn risk"
+      "shap_value": 0.35520246624946594,
+      "model": "Model A"
     },
     {
-      "feature": "User Tenure",
-      "value": 17.0,
-      "shap_value": -0.5403081774711609,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (17 days) - significantly reduces churn risk. Still in critical onboarding period."
-    },
-    {
-      "feature": "New Password Request",
-      "value": 8.0,
-      "shap_value": 0.5365684032440186,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
-    },
-    {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.4449551999568939,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.33257749676704407,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 33.29,
-      "shap_value": -0.2749553918838501,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (33 sessions) - moderately reduces churn risk."
+      "feature": "Day_16",
+      "value": 0.0,
+      "shap_value": -0.238388791680336,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_37",
+      "value": 0.0,
+      "shap_value": 0.22498290240764618,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "We've missed you! Check out what's new since your last visit."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Send a 'we miss you' nudge with a simple return path.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1228.png",
+  "chart_path": "outputs\\charts\\user_1228.png",
   "model_b_used": false
 }

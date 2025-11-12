@@ -1,0 +1,46 @@
+{
+  "user_id": 11097,
+  "churn_probability": 99.29,
+  "risk_level": "High",
+  "top_features": [
+    {
+      "feature": "avg_daily_usage",
+      "value": 35.918555555555564,
+      "shap_value": 1.2854869365692139,
+      "model": "Model A"
+    },
+    {
+      "feature": "Average Screen Time",
+      "value": 2.0,
+      "shap_value": 0.4972216784954071,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_15",
+      "value": 0.0,
+      "shap_value": 0.33081257343292236,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_30",
+      "value": 0.0,
+      "shap_value": 0.24655967950820923,
+      "model": "Model A"
+    },
+    {
+      "feature": "Average Spent on App (INR)",
+      "value": 93.0,
+      "shap_value": 0.2351571023464203,
+      "model": "Model A"
+    }
+  ],
+  "recommendations": [
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Apologize and offer priority support to address low satisfaction.",
+    "Send a 'we miss you' nudge with a simple return path.",
+    "Offer smart tips to help users explore underused features."
+  ],
+  "chart_path": "outputs\\charts\\user_11097.png",
+  "model_b_used": false
+}

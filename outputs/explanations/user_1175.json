@@ -1,54 +1,46 @@
 {
   "user_id": 1175,
-  "churn_probability": 70.23,
-  "risk_level": "Medium",
+  "churn_probability": 98.38,
+  "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 2 Engagement",
-      "value": 290.41,
-      "shap_value": 0.6568255424499512,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83c\udfaf Good activity in week 2 engagement (290 sessions) - significantly increases churn risk."
+      "feature": "std_dev_daily_usage",
+      "value": 154.4275268008273,
+      "shap_value": 1.138962984085083,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
+      "feature": "avg_daily_usage",
+      "value": 69.61433333333332,
+      "shap_value": 0.6627281308174133,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.4824146032333374,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.40894168615341187,
+      "model": "Model A"
     },
     {
-      "feature": "Day 37",
-      "value": 300.0,
-      "shap_value": -0.38254061341285706,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 300.0 - significantly reduces churn risk"
-    },
-    {
-      "feature": "Day 32",
-      "value": 79.33,
-      "shap_value": 0.3525882959365845,
-      "model": "Model A",
-      "description": "Day 32",
-      "explanation": "\ud83d\udcca Day 32: 79.33 - significantly increases churn risk"
-    },
-    {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_53",
       "value": 0.0,
-      "shap_value": 0.2963280975818634,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - moderately increases churn risk. User was disengaged this week."
+      "shap_value": 0.254802942276001,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_6",
+      "value": 183.25,
+      "shap_value": 0.23471128940582275,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app.",
-    "Join our community to connect with other users and share experiences."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1175.png",
+  "chart_path": "outputs\\charts\\user_1175.png",
   "model_b_used": false
 }

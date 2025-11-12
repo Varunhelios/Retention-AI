@@ -1,54 +1,45 @@
 {
   "user_id": 1926,
-  "churn_probability": 8.93,
-  "risk_level": "Low",
+  "churn_probability": 71.43,
+  "risk_level": "Medium",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 31.0,
-      "shap_value": -0.6069436073303223,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 31.0 - significantly reduces churn risk"
+      "feature": "avg_daily_usage",
+      "value": 24.20988888888889,
+      "shap_value": 0.8693422675132751,
+      "model": "Model A"
     },
     {
-      "feature": "Week 4 Engagement",
-      "value": 51.64,
-      "shap_value": -0.33191949129104614,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (51 sessions) - significantly reduces churn risk."
+      "feature": "std_dev_daily_usage",
+      "value": 39.56933816049273,
+      "shap_value": -0.36995992064476013,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 55.7,
-      "shap_value": -0.3259279131889343,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (55 sessions) - significantly reduces churn risk."
-    },
-    {
-      "feature": "Week 4 Engagement",
-      "value": 40.22,
-      "shap_value": -0.2869071364402771,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83c\udfaf Good activity in week 4 engagement (40 sessions) - moderately reduces churn risk."
-    },
-    {
-      "feature": "Late Usage Avg",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.2848702669143677,
-      "model": "Model A",
-      "description": "Late Usage Avg",
-      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - moderately increases churn risk"
+      "shap_value": 0.330467164516449,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_4",
+      "value": 109.34,
+      "shap_value": -0.2870543599128723,
+      "model": "Model A"
+    },
+    {
+      "feature": "Average Spent on App (INR)",
+      "value": 769.0,
+      "shap_value": -0.24650180339813232,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!"
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1926.png",
+  "chart_path": "outputs\\charts\\user_1926.png",
   "model_b_used": false
 }

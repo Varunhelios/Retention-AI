@@ -1,0 +1,46 @@
+{
+  "user_id": 4859,
+  "churn_probability": 16.16,
+  "risk_level": "Low",
+  "top_features": [
+    {
+      "feature": "Average Spent on App (INR)",
+      "value": 962.14,
+      "shap_value": -0.9451931715011597,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_49",
+      "value": 6.43,
+      "shap_value": -0.6348208785057068,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_22",
+      "value": 81.5,
+      "shap_value": -0.2897227704524994,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_86",
+      "value": 10.35,
+      "shap_value": -0.26941853761672974,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_11",
+      "value": 113.03,
+      "shap_value": -0.22681835293769836,
+      "model": "Model A"
+    }
+  ],
+  "recommendations": [
+    "Ask for quick feedback and provide a small perk to improve experience.",
+    "Ask for a public review or referrals; offer referral credits.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
+  ],
+  "chart_path": "outputs\\charts\\user_4859.png",
+  "model_b_used": false
+}

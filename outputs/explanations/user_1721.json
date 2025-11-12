@@ -1,54 +1,46 @@
 {
   "user_id": 1721,
-  "churn_probability": 99.84,
+  "churn_probability": 99.28,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 4.0,
-      "shap_value": 3.8146982192993164,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 4.0 - significantly increases churn risk"
-    },
-    {
-      "feature": "User Tenure",
-      "value": 20.0,
-      "shap_value": -0.6590538024902344,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83d\udcc8 Growing user (20 days) - significantly reduces churn risk. Still in critical onboarding period."
+      "feature": "avg_daily_usage",
+      "value": 16.704111111111114,
+      "shap_value": 0.9306949377059937,
+      "model": "Model A"
     },
     {
       "feature": "New Password Request",
       "value": 10.0,
-      "shap_value": 0.5315701365470886,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (10) - significantly increases churn risk. Significant login friction."
+      "shap_value": 0.5753233432769775,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
-      "value": 12.46,
-      "shap_value": -0.3536316156387329,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (12 sessions) - significantly reduces churn risk."
+      "feature": "Average Screen Time",
+      "value": 4.0,
+      "shap_value": 0.3538142740726471,
+      "model": "Model A"
     },
     {
-      "feature": "Week 2 Engagement",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.3180025517940521,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.32334795594215393,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_20",
+      "value": 82.3,
+      "shap_value": -0.28230854868888855,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "We've missed you! Check out what's new since your last visit."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Apologize and offer priority support to address low satisfaction.",
+    "Send a 'we miss you' nudge with a simple return path.",
+    "Offer smart tips to help users explore underused features."
   ],
-  "chart_path": "outputs/charts/user_1721.png",
+  "chart_path": "outputs\\charts\\user_1721.png",
   "model_b_used": false
 }

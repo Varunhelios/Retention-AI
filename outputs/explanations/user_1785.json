@@ -1,54 +1,46 @@
 {
   "user_id": 1785,
-  "churn_probability": 2.05,
-  "risk_level": "Low",
+  "churn_probability": 90.64,
+  "risk_level": "High",
   "top_features": [
     {
-      "feature": "App Rating Given",
-      "value": 10.0,
-      "shap_value": 0.7558833956718445,
-      "model": "Model A",
-      "description": "Rating they gave our app",
-      "explanation": "\u2b50 High rating (10.0/5 stars) - significantly increases churn risk. User appreciates the app."
+      "feature": "avg_daily_usage",
+      "value": 65.75988888888888,
+      "shap_value": 0.991801381111145,
+      "model": "Model A"
     },
     {
-      "feature": "Day 37",
-      "value": 61.97,
-      "shap_value": -0.6624922752380371,
-      "model": "Model A",
-      "description": "Day 37",
-      "explanation": "\ud83d\udcca Day 37: 61.97 - significantly reduces churn risk"
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.5247130393981934,
+      "model": "Model A"
     },
     {
-      "feature": "Day 36",
-      "value": 53.03,
-      "shap_value": -0.526523232460022,
-      "model": "Model A",
-      "description": "Day 36",
-      "explanation": "\ud83d\udcca Day 36: 53.03 - significantly reduces churn risk"
+      "feature": "Day_16",
+      "value": 0.0,
+      "shap_value": -0.2996605932712555,
+      "model": "Model A"
     },
     {
-      "feature": "Day 88",
-      "value": 102.4,
-      "shap_value": -0.48008963465690613,
-      "model": "Model A",
-      "description": "Day 88",
-      "explanation": "\ud83d\udcca Day 88: 102.4 - significantly reduces churn risk"
+      "feature": "Day_20",
+      "value": 108.09,
+      "shap_value": 0.2939740717411041,
+      "model": "Model A"
     },
     {
-      "feature": "Average Screen Time",
-      "value": 28.0,
-      "shap_value": -0.4097149968147278,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 28.0 - significantly reduces churn risk"
+      "feature": "Day_15",
+      "value": 0.0,
+      "shap_value": 0.24037297070026398,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!"
+    "Personalized onboarding to help you get started.",
+    "Weekly tips to help you get the most out of our platform.",
+    "Exclusive early access to new features.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1785.png",
+  "chart_path": "outputs\\charts\\user_1785.png",
   "model_b_used": false
 }

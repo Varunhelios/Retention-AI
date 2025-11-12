@@ -1,54 +1,46 @@
 {
   "user_id": 1451,
-  "churn_probability": 98.71,
+  "churn_probability": 97.39,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 2 Engagement",
-      "value": 0.0,
-      "shap_value": 0.4794110357761383,
-      "model": "Model A",
-      "description": "Activity level during their second week",
-      "explanation": "\ud83d\ude34 No activity in week 2 engagement - significantly increases churn risk. User was disengaged this week."
+      "feature": "avg_daily_usage",
+      "value": 19.98144444444444,
+      "shap_value": 0.7990816831588745,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.3914003372192383,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.3481407165527344,
+      "model": "Model A"
     },
     {
-      "feature": "Week 3 Engagement",
+      "feature": "Day_83",
       "value": 0.0,
-      "shap_value": 0.34268009662628174,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83d\ude34 No activity in week 3 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.23330704867839813,
+      "model": "Model A"
     },
     {
-      "feature": "Average Screen Time",
-      "value": 33.0,
-      "shap_value": -0.32805898785591125,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 33.0 - significantly reduces churn risk"
+      "feature": "Day_39",
+      "value": 0.0,
+      "shap_value": 0.21398931741714478,
+      "model": "Model A"
     },
     {
-      "feature": "Late Usage Avg",
+      "feature": "Day_53",
       "value": 0.0,
-      "shap_value": 0.2973951995372772,
-      "model": "Model A",
-      "description": "Late Usage Avg",
-      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - moderately increases churn risk"
+      "shap_value": 0.1836569756269455,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app.",
-    "Join our community to connect with other users and share experiences."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1451.png",
+  "chart_path": "outputs\\charts\\user_1451.png",
   "model_b_used": false
 }

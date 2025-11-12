@@ -79,11 +79,8 @@ def check_for_new_data():
         logger.error("Failed to process uploads")
         return False
     
-    # Process new data
-    if not run_script("process_new_data"):
-        logger.error("Failed to process new data")
-        return False
-    
+    # Note: process_upload.py already triggers process_new_data() internally.
+    # Avoid calling it again here to prevent double-processing and counter drift.
     return True
 
 def retrain_model(model_name):

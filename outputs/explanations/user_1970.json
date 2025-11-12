@@ -1,54 +1,45 @@
 {
   "user_id": 1970,
-  "churn_probability": 1.94,
+  "churn_probability": 22.05,
   "risk_level": "Low",
   "top_features": [
     {
-      "feature": "User Tenure",
-      "value": 30.0,
-      "shap_value": 0.7623323798179626,
-      "model": "Model A",
-      "description": "How long the user has been with us",
-      "explanation": "\ud83c\udfc6 Established user (30 days) - significantly increases churn risk. Long-term relationship built."
+      "feature": "avg_daily_usage",
+      "value": 29.222999999999995,
+      "shap_value": 0.7566508054733276,
+      "model": "Model A"
     },
     {
-      "feature": "New Password Request",
+      "feature": "Day_17",
+      "value": 129.12,
+      "shap_value": -0.45279625058174133,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_22",
+      "value": 77.91,
+      "shap_value": -0.3815874457359314,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_11",
+      "value": 147.56,
+      "shap_value": -0.36261433362960815,
+      "model": "Model A"
+    },
+    {
+      "feature": "Ratings",
       "value": 8.0,
-      "shap_value": 0.5767943263053894,
-      "model": "Model A",
-      "description": "New Password Request",
-      "explanation": "\ud83d\udea8 Multiple password resets (8) - significantly increases churn risk. Significant login friction."
-    },
-    {
-      "feature": "Week 3 Engagement",
-      "value": 42.63,
-      "shap_value": -0.4302855432033539,
-      "model": "Model A",
-      "description": "Activity level during their third week",
-      "explanation": "\ud83c\udfaf Good activity in week 3 engagement (42 sessions) - significantly reduces churn risk."
-    },
-    {
-      "feature": "Week 1 Engagement",
-      "value": 117.95,
-      "shap_value": 0.3322186768054962,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (117 sessions) - significantly increases churn risk."
-    },
-    {
-      "feature": "Week 5 Engagement",
-      "value": 2.77,
-      "shap_value": -0.3208707571029663,
-      "model": "Model A",
-      "description": "Activity level during their fifth week",
-      "explanation": "\ud83d\udcc9 Low activity in week 5 engagement (2 sessions) - significantly reduces churn risk."
+      "shap_value": -0.3144629895687103,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "Having trouble with your account? Our support team is here to help!",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!"
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1970.png",
+  "chart_path": "outputs\\charts\\user_1970.png",
   "model_b_used": false
 }

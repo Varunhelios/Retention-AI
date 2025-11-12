@@ -1,54 +1,46 @@
 {
   "user_id": 1186,
-  "churn_probability": 97.21,
+  "churn_probability": 94.95,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Average Screen Time",
-      "value": 42.0,
-      "shap_value": 1.0240421295166016,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 42.0 - significantly increases churn risk"
+      "feature": "avg_daily_usage",
+      "value": 18.80488888888889,
+      "shap_value": 0.8564843535423279,
+      "model": "Model A"
     },
     {
-      "feature": "App Rating Given",
-      "value": 9.0,
-      "shap_value": 0.3807806968688965,
-      "model": "Model A",
-      "description": "Rating they gave our app",
-      "explanation": "\u2b50 High rating (9.0/5 stars) - significantly increases churn risk. User appreciates the app."
-    },
-    {
-      "feature": "Late Usage Avg",
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 0.37988051772117615,
-      "model": "Model A",
-      "description": "Late Usage Avg",
-      "explanation": "\ud83d\udcca Late Usage Avg: 0.0 - significantly increases churn risk"
+      "shap_value": 0.2932465970516205,
+      "model": "Model A"
     },
     {
-      "feature": "Week 1 Engagement",
-      "value": 103.4,
-      "shap_value": -0.3119325637817383,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (103 sessions) - significantly reduces churn risk."
+      "feature": "std_dev_daily_usage",
+      "value": 35.96328559325014,
+      "shap_value": -0.21906380355358124,
+      "model": "Model A"
     },
     {
-      "feature": "Week 1 Engagement",
-      "value": 106.4,
-      "shap_value": -0.3020157814025879,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83c\udfaf Good activity in week 1 engagement (106 sessions) - significantly reduces churn risk."
+      "feature": "Day_29",
+      "value": 0.0,
+      "shap_value": 0.20042884349822998,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_26",
+      "value": 0.0,
+      "shap_value": 0.19530799984931946,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "As a valued customer, check out our premium features for an enhanced experience.",
-    "Discover new features in our latest update!",
-    "Check out our tips & tricks section to get the most out of our app."
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials.",
+    "Join our community forum to connect with other users."
   ],
-  "chart_path": "outputs/charts/user_1186.png",
+  "chart_path": "outputs\\charts\\user_1186.png",
   "model_b_used": false
 }

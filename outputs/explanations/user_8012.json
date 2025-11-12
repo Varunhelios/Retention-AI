@@ -1,0 +1,46 @@
+{
+  "user_id": 8012,
+  "churn_probability": 65.44,
+  "risk_level": "Medium",
+  "top_features": [
+    {
+      "feature": "Day_11",
+      "value": 10.1,
+      "shap_value": 0.4443952739238739,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_37",
+      "value": 3.46,
+      "shap_value": 0.40509870648384094,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_30",
+      "value": 7.58,
+      "shap_value": 0.26328083872795105,
+      "model": "Model A"
+    },
+    {
+      "feature": "Average Spent on App (INR)",
+      "value": 0.0,
+      "shap_value": 0.2546352446079254,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_20",
+      "value": 121.58,
+      "shap_value": 0.2373538762331009,
+      "model": "Model A"
+    }
+  ],
+  "recommendations": [
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Send a 'we miss you' nudge with a simple return path.",
+    "Ask for a public review or referrals; offer referral credits.",
+    "Offer smart tips to help users explore underused features."
+  ],
+  "chart_path": "outputs\\charts\\user_8012.png",
+  "model_b_used": false
+}

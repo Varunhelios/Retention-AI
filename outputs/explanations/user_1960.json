@@ -1,54 +1,46 @@
 {
   "user_id": 1960,
-  "churn_probability": 98.45,
+  "churn_probability": 96.55,
   "risk_level": "High",
   "top_features": [
     {
-      "feature": "Week 1 Engagement",
+      "feature": "avg_daily_usage",
+      "value": 19.37922222222222,
+      "shap_value": 0.885138213634491,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_89",
       "value": 0.0,
-      "shap_value": 1.1927720308303833,
-      "model": "Model A",
-      "description": "Activity level during their first week",
-      "explanation": "\ud83d\ude34 No activity in week 1 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.421857625246048,
+      "model": "Model A"
     },
     {
-      "feature": "Average Screen Time",
-      "value": 6.0,
-      "shap_value": 0.9285030364990234,
-      "model": "Model A",
-      "description": "Average Screen Time",
-      "explanation": "\ud83d\udcca Average Screen Time: 6.0 - significantly increases churn risk"
-    },
-    {
-      "feature": "Day 32",
-      "value": 51.11,
-      "shap_value": 0.4463731646537781,
-      "model": "Model A",
-      "description": "Day 32",
-      "explanation": "\ud83d\udcca Day 32: 51.11 - significantly increases churn risk"
-    },
-    {
-      "feature": "Week 4 Engagement",
+      "feature": "Day_11",
       "value": 0.0,
-      "shap_value": 0.3610258996486664,
-      "model": "Model A",
-      "description": "Activity level during their fourth week",
-      "explanation": "\ud83d\ude34 No activity in week 4 engagement - significantly increases churn risk. User was disengaged this week."
+      "shap_value": 0.30493268370628357,
+      "model": "Model A"
     },
     {
-      "feature": "Day 33",
-      "value": 31.92,
-      "shap_value": -0.3269127309322357,
-      "model": "Model A",
-      "description": "Day 33",
-      "explanation": "\ud83d\udcca Day 33: 31.92 - significantly reduces churn risk"
+      "feature": "Day_83",
+      "value": 0.0,
+      "shap_value": 0.1917273849248886,
+      "model": "Model A"
+    },
+    {
+      "feature": "Day_4",
+      "value": 0.0,
+      "shap_value": 0.17257441580295563,
+      "model": "Model A"
     }
   ],
   "recommendations": [
-    "We're working hard to improve. Your feedback is valuable to us!",
-    "Explore our app's key features to enhance your daily productivity and experience.",
-    "Discover new features in our latest update!"
+    "Win-back campaign: offer a limited-time incentive and a quick 2-click reactivation.",
+    "Re-engage with a personalized check-in and highlight new features they missed.",
+    "Apologize and offer priority support to address low satisfaction.",
+    "Offer smart tips to help users explore underused features.",
+    "Check out our knowledge base for helpful guides and tutorials."
   ],
-  "chart_path": "outputs/charts/user_1960.png",
+  "chart_path": "outputs\\charts\\user_1960.png",
   "model_b_used": false
 }
