@@ -41,19 +41,22 @@ class EmailRequest(BaseModel):
 app = FastAPI(title="Retention AI API", version="1.0.0")
 
 # CORS Configuration
+frontend_url = os.getenv('FRONTEND_URL', 'https://retention-ai-ten.vercel.app')
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://localhost:8000",
-    "http://127.0.0.1:8000"
+    "http://127.0.0.1:8000",
+    "https://retention-ai-ten.vercel.app"
 ]
 
 # Add CORS middleware with proper configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # For production, replace with your frontend URL
+    allow_origins=origins,
+    allow_origin_regex=r"https://retention-ai.*\.vercel\.app$",
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
     expose_headers=["*"],
     max_age=600  # 10 minutes
